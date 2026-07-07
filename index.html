@@ -176,8 +176,8 @@
         }
         
         .phone-mockup {
-            max-width: 350px !important;
-            width: auto !important;
+            width: fit-content !important;
+            max-width: 100% !important;
             margin-left: auto !important;
             margin-right: auto !important;
             display: flex !important;
@@ -186,6 +186,8 @@
         
         .phone-screenshot {
             width: auto !important;
+            height: auto !important;
+            max-height: 75vh !important;
             max-width: 100% !important;
             display: block !important;
             margin-left: auto !important;
@@ -193,17 +195,14 @@
         }
         
         @media (min-width: 1400px) {
-            .phone-mockup {
-                max-width: 470px !important;
+            .phone-screenshot {
+                max-height: 80vh !important;
             }
         }
         
-        @media (max-width: 1024px) {
-            .phone-mockup {
-                max-width: 350px !important;
-                width: auto !important;
-                margin-left: auto !important;
-                margin-right: auto !important;
+        @media (max-width: 768px) {
+            .app-hero-visual {
+                width: 100% !important;
             }
         }
         
@@ -308,9 +307,6 @@
             
             .phone-mockup {
                 margin-top: -10px !important;
-                width: auto !important;
-                margin-left: auto !important;
-                margin-right: auto !important;
             }
             
             .app-hero {
