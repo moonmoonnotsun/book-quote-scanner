@@ -95,6 +95,10 @@ function stripHtml(str) {
   return str.replace(/<[^>]*>/g, '');
 }
 
+function normalizeDashes(str) {
+  return str.replace(/[—–]/g, '-');
+}
+
 function hreflangBlock() {
   const lines = ALL_LOCALES.map(
     ({ hreflang, path: p }) =>
@@ -463,7 +467,7 @@ function buildLocalePage(code) {
   html = html.replace(/\s*<script>\s*\(function \(\) \{\s*var select = document\.getElementById\('lang-select'\)[\s\S]*?<\/script>\s*/g, '\n');
   html = html.replace('</body>', `${langSwitcherScript()}\n</body>`);
 
-  return html;
+  return normalizeDashes(html);
 }
 
 function updateEnglishIndex() {
@@ -486,7 +490,7 @@ function updateEnglishIndex() {
   }
   html = html.replace(/\s*<script>\s*\(function \(\) \{\s*var select = document\.getElementById\('lang-select'\)[\s\S]*?<\/script>\s*/g, '\n');
   html = html.replace('</body>', `${langSwitcherScript()}\n</body>`);
-  fs.writeFileSync(TEMPLATE_PATH, html);
+  fs.writeFileSync(TEMPLATE_PATH, normalizeDashes(html));
 }
 
 function updateSitemap() {

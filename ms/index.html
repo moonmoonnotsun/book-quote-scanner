@@ -824,6 +824,52 @@
                 justify-self: center;
             }
         }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -1061,7 +1107,7 @@
                         </svg>
                     </div>
                     <h3 class="feature-title">Pengiktirafan Teks Pintar</h3>
-                    <p class="feature-description">Berfungsi dengan mana-mana teks bercetak — dari novel ke artikel, petikan kegemaran anda hanya satu snap.</p>
+                    <p class="feature-description">Berfungsi dengan mana-mana teks bercetak - dari novel ke artikel, petikan kegemaran anda hanya satu snap.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-container">
@@ -1232,7 +1278,7 @@
                     <div class="logo-circle">Q</div>
                     <span class="logo-text">Pengimbas Petikan Buku</span>
                 </div>
-                                                                                                <div class="footer-lang">
+                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Bahasa</label>
                     <select id="lang-select" class="lang-select" aria-label="Bahasa">
                         <option value="/">EN</option>

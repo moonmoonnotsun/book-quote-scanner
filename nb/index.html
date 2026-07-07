@@ -824,6 +824,52 @@
                 justify-self: center;
             }
         }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -1061,7 +1107,7 @@
                         </svg>
                     </div>
                     <h3 class="feature-title">Smart tekstgjenkjenning</h3>
-                    <p class="feature-description">Fungerer med all trykt tekst — fra romaner til artikler, favorittpassasjene dine er bare et snap unna.</p>
+                    <p class="feature-description">Fungerer med all trykt tekst - fra romaner til artikler, favorittpassasjene dine er bare et snap unna.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-container">
@@ -1232,7 +1278,7 @@
                     <div class="logo-circle">Q</div>
                     <span class="logo-text">Bok sitat skanner</span>
                 </div>
-                                                                                                <div class="footer-lang">
+                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Språk</label>
                     <select id="lang-select" class="lang-select" aria-label="Språk">
                         <option value="/">EN</option>
