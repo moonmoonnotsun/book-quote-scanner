@@ -71,12 +71,13 @@ let template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
 
 function parseFeatureBullets(description) {
   const bullets = [];
-  const re = /- ([^\n]+)\n([\s\S]*?)(?=\n\n- |\n\nPREMIUM|$)/g;
+  const re = /- ([^\n]+)\n([\s\S]*?)(?=\n\n- |\n\nPREMIUM|$)/gi;
   let m;
   while ((m = re.exec(description)) !== null && bullets.length < 4) {
+    const desc = m[2].split(/\n\n/)[0].replace(/\n/g, ' ').trim();
     bullets.push({
       title: m[1].trim(),
-      desc: m[2].replace(/\n/g, ' ').trim(),
+      desc,
     });
   }
   return bullets;

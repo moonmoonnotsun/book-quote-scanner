@@ -801,6 +801,29 @@
                 justify-self: center;
             }
         }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -1050,7 +1073,7 @@
                         </svg>
                     </div>
                     <h3 class="feature-title">Byg din ordforråd</h3>
-                    <p class="feature-description">Under fangst af citater, tryk på et ord for øjeblikkelige definitioner og dybere forståelse. Stil AI spørgsmål om ord, du vil udforske mere.  Uanset om du læser for nydelse, studerer til eksamen eller bygger din inspirationssamling, er vores app din hjælper.  Premium-abonnement er tilgængeligt som in-app køb til ekstra funktioner.  Brugsvilkår: https://mpc-app-c2e7a.web.app/clarify-terms.html Fortrolighedspolitik: https://mpc-app-c2e7a.web.app/clarify-privacy.html</p>
+                    <p class="feature-description">Under fangst af citater, tryk på et ord for øjeblikkelige definitioner og dybere forståelse. Stil AI spørgsmål om ord, du vil udforske mere.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-container">
@@ -1209,7 +1232,7 @@
                     <div class="logo-circle">Q</div>
                     <span class="logo-text">Bogcitatskanner</span>
                 </div>
-                                                                                <div class="footer-lang">
+                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Sprog</label>
                     <select id="lang-select" class="lang-select" aria-label="Sprog">
                         <option value="/">EN</option>
