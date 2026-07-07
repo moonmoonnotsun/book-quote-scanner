@@ -870,6 +870,29 @@
                 justify-self: center;
             }
         }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -949,7 +972,7 @@
                             "name": "Cos'è un'app per scannerizzare preventivi di libri?",
                             "acceptedAnswer": {
                                       "@type": "Answer",
-                                      "text": "Un'app per scanner di citazioni di libri acquisisce il testo dalle pagine stampate e salva le tue citazioni.Scanner citazioni libriutilizza la fotocamera del tuo iPhone e l'OCR per creare la tua libreria di preventivi personale."
+                                      "text": "Un'app per scanner di citazioni di libri acquisisce il testo dalle pagine stampate e salva le tue citazioni. Scanner citazioni libri utilizza la fotocamera del tuo iPhone e l'OCR per creare la tua libreria di preventivi personale."
                             }
                   },
                   {
@@ -1184,7 +1207,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Cos'è un<span class="title-accent">app per scannerizzare preventivi di libri</span>?</h2>
-                <p class="section-subtitle about-copy">Un'app per scanner di citazioni di libri acquisisce il testo dalle pagine stampate in modo da poter salvare le citazioni in un unico posto. <a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Scanner citazioni libri</a>per iPhone: scansione OCR, libreria di citazioni, definizioni di parole e aiuto per il vocabolario AI.</p>
+                <p class="section-subtitle about-copy">Un'app per scanner di citazioni di libri acquisisce il testo dalle pagine stampate in modo da poter salvare le citazioni in un unico posto. <a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Scanner citazioni libri</a> per iPhone: scansione OCR, libreria di citazioni, definizioni di parole e aiuto per il vocabolario AI.</p>
             </div>
         </div>
     </section>
@@ -1202,7 +1225,7 @@
                         <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer">Un'app per scanner di citazioni di libri acquisisce il testo dalle pagine stampate e salva le tue citazioni.<a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Scanner citazioni libri</a>utilizza la fotocamera del tuo iPhone e l'OCR per creare la tua libreria di preventivi personale.</p>
+                        <p class="faq-answer">Un'app per scanner di citazioni di libri acquisisce il testo dalle pagine stampate e salva le tue citazioni. <a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Scanner citazioni libri</a> utilizza la fotocamera del tuo iPhone e l'OCR per creare la tua libreria di preventivi personale.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -1257,7 +1280,7 @@
     <section class="cta-section">
         <div class="cta-card">
             <h2 class="cta-title">Scarica l'app per scannerizzare i preventivi dei libri</h2>
-            <p class="cta-description">Ottenere <a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Scanner citazioni libri</a>su iPhone: scansiona le pagine, salva le citazioni preferite e leggile in qualsiasi momento.</p>
+            <p class="cta-description">Ottenere <a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Scanner citazioni libri</a> su iPhone: scansiona le pagine, salva le citazioni preferite e leggile in qualsiasi momento.</p>
             <div class="cta-buttons">
                 <a href="https://apps.apple.com/it/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Scarica su App Store">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
@@ -1278,7 +1301,7 @@
                     <div class="logo-circle">Q</div>
                     <span class="logo-text">Scanner citazioni libri</span>
                 </div>
-                                                                                                                                <div class="footer-lang">
+                                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Lingua</label>
                     <select id="lang-select" class="lang-select" aria-label="Lingua">
                         <option value="/">EN</option>

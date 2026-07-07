@@ -99,6 +99,24 @@ function normalizeDashes(str) {
   return str.replace(/[—–]/g, '-');
 }
 
+function spaceBefore(text) {
+  if (!text) return '';
+  return text.startsWith(' ') ? text : ` ${text}`;
+}
+
+function spaceAfter(text) {
+  if (!text) return '';
+  return text.endsWith(' ') ? text : `${text} `;
+}
+
+function appLink(storeUrl, appName) {
+  return `<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>`;
+}
+
+function linkedText(before, appName, after, storeUrl) {
+  return `${spaceAfter(before)}${appLink(storeUrl, appName)}${spaceBefore(after)}`;
+}
+
 function hreflangBlock() {
   const lines = ALL_LOCALES.map(
     ({ hreflang, path: p }) =>
@@ -406,7 +424,7 @@ function buildLocalePage(code) {
   );
   html = html.replace(
     /<p class="section-subtitle about-copy">[\s\S]*?<\/p>/,
-    `<p class="section-subtitle about-copy">${o.sectionAboutCopy}<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>${o.sectionAboutCopyAfter}</p>`,
+    `<p class="section-subtitle about-copy">${linkedText(o.sectionAboutCopy, appName, o.sectionAboutCopyAfter, storeUrl)}</p>`,
   );
 
   html = html.replace(
@@ -419,7 +437,7 @@ function buildLocalePage(code) {
   );
 
   const faqPairs = [
-    [o.faq1Q, `${o.faq1A}<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>${o.faq1AAfter}`],
+    [o.faq1Q, linkedText(o.faq1A, appName, o.faq1AAfter, storeUrl)],
     [o.faq2Q, o.faq2A],
     [o.faq3Q, o.faq3A],
     [o.faq4Q, o.faq4A],
@@ -444,7 +462,7 @@ function buildLocalePage(code) {
   html = html.replace(/<h2 class="cta-title">[^<]*<\/h2>/, `<h2 class="cta-title">${o.ctaTitle}</h2>`);
   html = html.replace(
     /<p class="cta-description">[\s\S]*?<\/p>/,
-    `<p class="cta-description">${o.ctaDescription}<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>${o.ctaDescriptionAfter}</p>`,
+    `<p class="cta-description">${linkedText(o.ctaDescription, appName, o.ctaDescriptionAfter, storeUrl)}</p>`,
   );
 
   html = html.replace(/<span>Download on the App Store<\/span>/g, `<span>${o.downloadAppStore}</span>`);

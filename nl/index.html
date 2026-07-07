@@ -870,6 +870,29 @@
                 justify-self: center;
             }
         }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -949,7 +972,7 @@
                             "name": "Wat is een boekcitaatscanner-app?",
                             "acceptedAnswer": {
                                       "@type": "Answer",
-                                      "text": "Een app voor het scannen van boekcitaten legt tekst van afgedrukte pagina's vast en slaat uw offertes op.Boekcitaat Scannergebruikt uw iPhone-camera en OCR om uw persoonlijke offertebibliotheek samen te stellen."
+                                      "text": "Een app voor het scannen van boekcitaten legt tekst van afgedrukte pagina's vast en slaat uw offertes op. Boekcitaat Scanner gebruikt uw iPhone-camera en OCR om uw persoonlijke offertebibliotheek samen te stellen."
                             }
                   },
                   {
@@ -1184,7 +1207,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Wat is een<span class="title-accent">boekcitaatscanner-app</span>?</h2>
-                <p class="section-subtitle about-copy">Een app voor het scannen van boekcitaten legt tekst van afgedrukte pagina's vast, zodat u offertes op één plek kunt opslaan. <a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Boekcitaat Scanner</a>voor iPhone - OCR-scannen, citatenbibliotheek, woorddefinities en AI-woordenschathulp.</p>
+                <p class="section-subtitle about-copy">Een app voor het scannen van boekcitaten legt tekst van afgedrukte pagina's vast, zodat u offertes op één plek kunt opslaan. <a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Boekcitaat Scanner</a> voor iPhone - OCR-scannen, citatenbibliotheek, woorddefinities en AI-woordenschathulp.</p>
             </div>
         </div>
     </section>
@@ -1202,7 +1225,7 @@
                         <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer">Een app voor het scannen van boekcitaten legt tekst van afgedrukte pagina's vast en slaat uw offertes op.<a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Boekcitaat Scanner</a>gebruikt uw iPhone-camera en OCR om uw persoonlijke offertebibliotheek samen te stellen.</p>
+                        <p class="faq-answer">Een app voor het scannen van boekcitaten legt tekst van afgedrukte pagina's vast en slaat uw offertes op. <a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Boekcitaat Scanner</a> gebruikt uw iPhone-camera en OCR om uw persoonlijke offertebibliotheek samen te stellen.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -1257,7 +1280,7 @@
     <section class="cta-section">
         <div class="cta-card">
             <h2 class="cta-title">Download de app voor het scannen van boekcitaten</h2>
-            <p class="cta-description">Krijgen <a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Boekcitaat Scanner</a>op iPhone - scan pagina's, bewaar favoriete citaten en lees ze op elk gewenst moment.</p>
+            <p class="cta-description">Krijgen <a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Boekcitaat Scanner</a> op iPhone - scan pagina's, bewaar favoriete citaten en lees ze op elk gewenst moment.</p>
             <div class="cta-buttons">
                 <a href="https://apps.apple.com/nl/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Download in de App Store">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
@@ -1278,7 +1301,7 @@
                     <div class="logo-circle">Q</div>
                     <span class="logo-text">Boekcitaat Scanner</span>
                 </div>
-                                                                                                                                <div class="footer-lang">
+                                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Taal</label>
                     <select id="lang-select" class="lang-select" aria-label="Taal">
                         <option value="/">EN</option>

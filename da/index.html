@@ -870,6 +870,29 @@
                 justify-self: center;
             }
         }
+.footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 16px;
+        }
+        .footer-logo {
+            justify-self: start;
+        }
+        .footer-links {
+            justify-self: end;
+        }
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+            .footer-logo,
+            .footer-links {
+                justify-self: center;
+            }
+        }
     </style>
     
     <!-- Structured Data (JSON-LD) -->
@@ -949,7 +972,7 @@
                             "name": "Hvad er en bogcitatscanner-app?",
                             "acceptedAnswer": {
                                       "@type": "Answer",
-                                      "text": "En bog citat scanner app fanger tekst fra udskrevne sider og gemmer dine citater.Bogcitatskannerbruger dit iPhone-kamera og OCR til at opbygge dit personlige tilbudsbibliotek."
+                                      "text": "En bog citat scanner app fanger tekst fra udskrevne sider og gemmer dine citater. Bogcitatskanner bruger dit iPhone-kamera og OCR til at opbygge dit personlige tilbudsbibliotek."
                             }
                   },
                   {
@@ -1184,7 +1207,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Hvad er en<span class="title-accent">bog tilbud scanner app</span>?</h2>
-                <p class="section-subtitle about-copy">En bogcitatscanner-app fanger tekst fra udskrevne sider, så du kan gemme citater ét sted. <a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Bogcitatskanner</a>til iPhone - OCR-scanning, citatbibliotek, orddefinitioner og hjælp til AI-ordforråd.</p>
+                <p class="section-subtitle about-copy">En bogcitatscanner-app fanger tekst fra udskrevne sider, så du kan gemme citater ét sted. <a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Bogcitatskanner</a> til iPhone - OCR-scanning, citatbibliotek, orddefinitioner og hjælp til AI-ordforråd.</p>
             </div>
         </div>
     </section>
@@ -1202,7 +1225,7 @@
                         <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer">En bog citat scanner app fanger tekst fra udskrevne sider og gemmer dine citater.<a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Bogcitatskanner</a>bruger dit iPhone-kamera og OCR til at opbygge dit personlige tilbudsbibliotek.</p>
+                        <p class="faq-answer">En bog citat scanner app fanger tekst fra udskrevne sider og gemmer dine citater. <a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Bogcitatskanner</a> bruger dit iPhone-kamera og OCR til at opbygge dit personlige tilbudsbibliotek.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -1257,7 +1280,7 @@
     <section class="cta-section">
         <div class="cta-card">
             <h2 class="cta-title">Download bogen citat scanner-appen</h2>
-            <p class="cta-description">Få <a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Bogcitatskanner</a>på iPhone - scan sider, gem yndlingscitater, og læs dem når som helst.</p>
+            <p class="cta-description">Få <a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Bogcitatskanner</a> på iPhone - scan sider, gem yndlingscitater, og læs dem når som helst.</p>
             <div class="cta-buttons">
                 <a href="https://apps.apple.com/dk/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Hent i App Store">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
@@ -1278,7 +1301,7 @@
                     <div class="logo-circle">Q</div>
                     <span class="logo-text">Bogcitatskanner</span>
                 </div>
-                                                                                                                                <div class="footer-lang">
+                                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Sprog</label>
                     <select id="lang-select" class="lang-select" aria-label="Sprog">
                         <option value="/">EN</option>
