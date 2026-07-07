@@ -283,7 +283,7 @@ function buildEnglishTemplates(appName) {
     faq6A:
       "Yes. Ask AI about words while collecting quotes so you can understand and remember more.",
     ctaTitle: "Download the book quote scanner app",
-    ctaDescription: "Get ",
+    ctaDescription: "Download ",
     ctaDescriptionAfter:
       " on iPhone - scan pages, save favourite quotes, and read them anytime.",
     feature5Title: "AI Vocabulary Chat",
