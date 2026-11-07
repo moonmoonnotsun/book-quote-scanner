@@ -5,9 +5,9 @@
     "appStoreCountry": "de",
     "metaTitle": "Buchzitat-Scanner - Buchzitat-Scanner OCR-App für iPhone",
     "metaDescription": "Mit Buchzitat-Scanner können Sie Seiten mit OCR scannen, Buchzitate speichern und Favoriten auf dem iPhone erneut lesen. Erstellen Sie Ihre persönliche Zitatbib",
-    "heroSlogan": "Buchzitat-Scanner für iPhone",
-    "heroH1Before": "Scannen, speichern und lesen Sie Ihren Favoriten",
-    "heroH1Highlight": "Buchzitate",
+    "heroSlogan": "Buchzitat-Scanner für iPhone und Android",
+    "heroH1Before": "Sie Ihre ",
+    "heroH1Highlight": "Lieblingsbuchzitate",
     "heroH1After": "",
     "heroTagline": "mit dieser Funktion können Sie jede Seite scannen und Buchzitate speichern. Machen Sie ein Foto, wählen Sie Ihre Favoriten aus und bewahren Sie sie in einer Bibliothek auf.",
     "sectionFeaturesLine1": "Ihre persönliche Angebotsbibliothek,",
@@ -49,7 +49,9 @@
     "feature5Title": "KI-Vokabular-Chat",
     "feature5Desc": "Fragen Sie die KI beim Sammeln von Zitaten nach Wörtern. Lernen Sie Bedeutungen schneller und halten Sie den Lesefluss aufrecht.",
     "feature6Title": "Favoritenbibliothek",
-    "feature6Desc": "Speichern Sie Ihre besten Zitate und lesen Sie sie jederzeit. Bewahren Sie jedes Lieblingszitat an einem Ort auf."
+    "feature6Desc": "Speichern Sie Ihre besten Zitate und lesen Sie sie jederzeit. Bewahren Sie jedes Lieblingszitat an einem Ort auf.",
+    "storeSoft": "Laden im",
+    "heroH1Lead": "Scannen und speichern"
   },
   "fr": {
     "htmlLang": "fr",
@@ -57,8 +59,8 @@
     "appStoreCountry": "fr",
     "metaTitle": "Scan de citations de livres - Book Quote Scanner OCR App pour iPh",
     "metaDescription": "Scan de citations de livres vous permet de numériser des pages par OCR, d'enregistrer des citations de livres et de relire vos favoris sur iPhone. Créez votre b",
-    "heroSlogan": "Scan de citations de livres pour iPhone",
-    "heroH1Before": "Scannez, enregistrez et lisez votre favori",
+    "heroSlogan": "Scan de citations de livres pour iPhone et Android",
+    "heroH1Before": "vos ",
     "heroH1Highlight": "citations de livres",
     "heroH1After": "",
     "heroTagline": "vous permet de numériser n'importe quelle page et d'enregistrer des citations de livres. Prenez une photo, choisissez vos préférées et conservez-les dans une seule bibliothèque.",
@@ -101,7 +103,9 @@
     "feature5Title": "Chat de vocabulaire IA",
     "feature5Desc": "Interrogez l'IA sur les mots tout en collectant des citations. Apprenez les significations plus rapidement et continuez à lire.",
     "feature6Title": "Bibliothèque de favoris",
-    "feature6Desc": "Enregistrez vos meilleures citations et lisez-les à tout moment. Conservez chaque citation préférée au même endroit."
+    "feature6Desc": "Enregistrez vos meilleures citations et lisez-les à tout moment. Conservez chaque citation préférée au même endroit.",
+    "storeSoft": "Télécharger dans",
+    "heroH1Lead": "Scannez et enregistrez"
   },
   "es": {
     "htmlLang": "es",
@@ -109,8 +113,8 @@
     "appStoreCountry": "es",
     "metaTitle": "Escáner de citas de libros - Aplicación OCR Book Quote Scanner pa",
     "metaDescription": "Escáner de citas de libros te permite escanear páginas con OCR, guardar citas de libros y volver a leer favoritos en iPhone. Cree su biblioteca de cotizaciones",
-    "heroSlogan": "Escáner de citas de libros para iPhone",
-    "heroH1Before": "Escanea, guarda y lee tu favorito",
+    "heroSlogan": "Escáner de citas de libros para iPhone y Android",
+    "heroH1Before": "tus ",
     "heroH1Highlight": "citas de libros",
     "heroH1After": "",
     "heroTagline": "le permite escanear cualquier página y guardar citas de libros. Toma una foto, elige tus favoritas y guárdalas en una biblioteca.",
@@ -153,7 +157,9 @@
     "feature5Title": "Chat de vocabulario de IA",
     "feature5Desc": "Pregúntele a AI sobre palabras mientras recopila citas. Aprenda los significados más rápido y siga leyendo.",
     "feature6Title": "Biblioteca de favoritos",
-    "feature6Desc": "Guarde sus mejores citas y léalas en cualquier momento. Mantenga todas las citas favoritas en un solo lugar."
+    "feature6Desc": "Guarde sus mejores citas y léalas en cualquier momento. Mantenga todas las citas favoritas en un solo lugar.",
+    "storeSoft": "Consíguelo en el",
+    "heroH1Lead": "Escanea y guarda"
   },
   "ru": {
     "htmlLang": "ru",
@@ -161,8 +167,8 @@
     "appStoreCountry": "ru",
     "metaTitle": "Сканер цитат из книг - сохраняйте цитаты на iPhone",
     "metaDescription": "Сканируйте страницы, сохраняйте цитаты из книг и перечитывайте избранное на iPhone. OCR, словарь и помощь ИИ в одном приложении.",
-    "heroSlogan": "Сканер цитат из книг для iPhone",
-    "heroH1Before": "Сканируйте, сохраняйте и перечитывайте ",
+    "heroSlogan": "Сканер цитат из книг для iPhone и Android",
+    "heroH1Before": "",
     "heroH1Highlight": "любимые цитаты",
     "heroH1After": "",
     "heroTagline": "позволяет сканировать любую страницу и сохранять цитаты из книг. Сделайте снимок, выберите понравившиеся и храните их в одной библиотеке.",
@@ -205,7 +211,9 @@
     "feature5Title": "Словарный чат с искусственным интеллектом",
     "feature5Desc": "Спрашивайте ИИ о словах, собирая цитаты. Учите значения быстрее и продолжайте читать.",
     "feature6Title": "Библиотека избранного",
-    "feature6Desc": "Сохраняйте свои лучшие цитаты и читайте их в любое время. Храните все любимые цитаты в одном месте."
+    "feature6Desc": "Сохраняйте свои лучшие цитаты и читайте их в любое время. Храните все любимые цитаты в одном месте.",
+    "storeSoft": "Скачайте в",
+    "heroH1Lead": "Сканируйте и сохраняйте"
   },
   "pl": {
     "htmlLang": "pl",
@@ -213,8 +221,8 @@
     "appStoreCountry": "pl",
     "metaTitle": "Skaner cytatów z książek - Skaner cytatów z książek Aplikacja OCR",
     "metaDescription": "Skaner cytatów z książek umożliwia skanowanie stron metodą OCR, zapisywanie cytatów z książek i ponowne czytanie ulubionych na iPhonie. Zbuduj swoją osobistą bi",
-    "heroSlogan": "Skaner cytatów z książek na iPhone'a",
-    "heroH1Before": "Skanuj, zapisuj i czytaj swoje ulubione",
+    "heroSlogan": "Skaner cytatów z książek na iPhone'a i Androida",
+    "heroH1Before": "swoje ulubione ",
     "heroH1Highlight": "cytaty z książek",
     "heroH1After": "",
     "heroTagline": "pozwala zeskanować dowolną stronę i zapisać cytaty z książek. Zrób zdjęcie, wybierz ulubione i przechowuj je w jednej bibliotece.",
@@ -257,7 +265,9 @@
     "feature5Title": "Czat ze słownictwem AI",
     "feature5Desc": "Zapytaj sztuczną inteligencję o słowa podczas zbierania cytatów. Szybciej ucz się znaczeń i kontynuuj czytanie.",
     "feature6Title": "Biblioteka ulubionych",
-    "feature6Desc": "Zapisz swoje najlepsze cytaty i czytaj je w dowolnym momencie. Trzymaj każdy ulubiony cytat w jednym miejscu."
+    "feature6Desc": "Zapisz swoje najlepsze cytaty i czytaj je w dowolnym momencie. Trzymaj każdy ulubiony cytat w jednym miejscu.",
+    "storeSoft": "Pobierz w",
+    "heroH1Lead": "Skanuj i zapisuj"
   },
   "ja": {
     "htmlLang": "ja",
@@ -265,10 +275,10 @@
     "appStoreCountry": "jp",
     "metaTitle": "ブック引用スキャナー - iPhone 用書籍引用スキャナー OCR アプリ iPhone",
     "metaDescription": "ブック参照スキャナーを使用すると、ページを OCR スキャンし、本の引用を保存し、iPhone でお気に入りを再読できます。単語の定義と AI の助けを借りて、個人的な引用ライブラリを構築します。 ブック引用スキャナー.",
-    "heroSlogan": "ブック参照スキャナー for iPhone",
-    "heroH1Before": "お気に入りをスキャンして保存し、読む",
+    "heroSlogan": "iPhone と Android のブック引用スキャナー",
+    "heroH1Before": "お気に入りの",
     "heroH1Highlight": "本の引用",
-    "heroH1After": "",
+    "heroH1After": "をスキャンして保存",
     "heroTagline": "任意のページをスキャンして本の引用を保存できます。写真を撮ってお気に入りを選択し、1 つのライブラリに保管します。",
     "sectionFeaturesLine1": "あなたの個人的な引用ライブラリ、",
     "sectionFeaturesLine2": "読んだすべてのページから構築される",
@@ -309,7 +319,8 @@
     "feature5Title": "AIボキャブラリーチャット",
     "feature5Desc": "名言を収集しながら AI に言葉について質問します。意味をより早く学び、流れを読み続けます。",
     "feature6Title": "お気に入りライブラリ",
-    "feature6Desc": "最高の名言を保存しておいて、いつでも読んでください。お気に入りの引用をすべて 1 か所に保管します。"
+    "feature6Desc": "最高の名言を保存しておいて、いつでも読んでください。お気に入りの引用をすべて 1 か所に保管します。",
+    "storeSoft": "ダウンロード"
   },
   "pt-BR": {
     "htmlLang": "pt-BR",
@@ -317,8 +328,8 @@
     "appStoreCountry": "br",
     "metaTitle": "Scanner de remessas de livros - Book Quote Scanner OCR App para i",
     "metaDescription": "O Scanner de remessas de livros permite digitalizar páginas com OCR, salvar citações de livros e reler favoritos no iPhone. Crie sua biblioteca pessoal de citaç",
-    "heroSlogan": "Scanner de remessas de livros para iPhone",
-    "heroH1Before": "Digitalize, salve e leia seu favorito",
+    "heroSlogan": "Scanner de citações de livros para iPhone e Android",
+    "heroH1Before": "suas ",
     "heroH1Highlight": "citações de livros",
     "heroH1After": "",
     "heroTagline": "permite digitalizar qualquer página e salvar citações de livros. Tire uma foto, escolha suas favoritas e guarde-as em uma biblioteca.",
@@ -361,7 +372,9 @@
     "feature5Title": "Bate-papo de vocabulário de IA",
     "feature5Desc": "Pergunte à IA sobre palavras enquanto coleta citações. Aprenda os significados mais rapidamente e mantenha o fluxo de leitura.",
     "feature6Title": "Biblioteca de Favoritos",
-    "feature6Desc": "Salve suas melhores citações e leia-as a qualquer momento. Mantenha todas as citações favoritas em um só lugar."
+    "feature6Desc": "Salve suas melhores citações e leia-as a qualquer momento. Mantenha todas as citações favoritas em um só lugar.",
+    "storeSoft": "Baixar na",
+    "heroH1Lead": "Digitalize e salve"
   },
   "zh-Hans": {
     "htmlLang": "zh-CN",
@@ -369,9 +382,9 @@
     "appStoreCountry": "cn",
     "metaTitle": "书籍摘录扫描器 - iPhone 版书籍报价扫描仪 OCR 应用程序 iPhone",
     "metaDescription": "书籍摘录扫描器可让您在 iPhone 上 OCR 扫描页面、保存书籍引言以及重读收藏夹。利用单词定义和人工智能帮助构建您的个人报价库。 书籍摘录扫描器.",
-    "heroSlogan": "iPhone 版书籍摘录扫描器",
-    "heroH1Before": "扫描、保存并阅读您喜欢的内容",
-    "heroH1Highlight": "书名言",
+    "heroSlogan": "iPhone 和 Android 版书籍摘录扫描器",
+    "heroH1Before": "你喜欢的",
+    "heroH1Highlight": "书摘",
     "heroH1After": "",
     "heroTagline": "让您扫描任何页面并保存书籍报价。拍摄一张照片，选择您最喜欢的照片，并将它们保存在一个图库中。",
     "sectionFeaturesLine1": "您的个人报价库，",
@@ -413,7 +426,9 @@
     "feature5Title": "人工智能词汇聊天",
     "feature5Desc": "在收集引言的同时向 AI 询问单词。更快地学习含义并保持阅读流畅。",
     "feature6Title": "收藏夹库",
-    "feature6Desc": "保存您最好的报价并随时阅读。将每一句最喜欢的名言都放在一个地方。"
+    "feature6Desc": "保存您最好的报价并随时阅读。将每一句最喜欢的名言都放在一个地方。",
+    "storeSoft": "下载",
+    "heroH1Lead": "扫描并保存"
   },
   "ko": {
     "htmlLang": "ko",
@@ -421,10 +436,10 @@
     "appStoreCountry": "kr",
     "metaTitle": "책을 읽을 수 있어요 - iPhone용 책 인용 스캐너 OCR 앱 iPhone",
     "metaDescription": "책을 사용하면 페이지를 OCR 스캔하고, 책 인용문을 저장하고, iPhone에서 즐겨찾기를 다시 읽을 수 있습니다. 단어 정의와 AI 도움말을 사용하여 개인 인용문 라이브러리를 구축하세요. 책 인용 스캐너.",
-    "heroSlogan": "iPhone용으로 책을 읽을 수 있어요",
-    "heroH1Before": "좋아하는 것을 스캔하고 저장하고 읽으세요",
-    "heroH1Highlight": "책 인용문",
-    "heroH1After": "",
+    "heroSlogan": "iPhone과 Android용 책 인용 스캐너",
+    "heroH1Before": "좋아하는 ",
+    "heroH1Highlight": "책 인용문을",
+    "heroH1After": " 스캔하고 저장하세요",
     "heroTagline": "어떤 페이지든 스캔하고 책 인용문을 저장할 수 있습니다. 사진을 찍고 마음에 드는 사진을 골라 하나의 라이브러리에 보관하세요.",
     "sectionFeaturesLine1": "귀하의 개인 인용문 라이브러리,",
     "sectionFeaturesLine2": "당신이 읽는 모든 페이지에서 만들어졌습니다.",
@@ -465,7 +480,8 @@
     "feature5Title": "AI 어휘 채팅",
     "feature5Desc": "인용문을 수집하면서 AI에게 단어에 대해 물어보세요. 의미를 더 빨리 배우고 계속해서 읽으세요.",
     "feature6Title": "즐겨찾기 라이브러리",
-    "feature6Desc": "최고의 인용문을 저장하고 언제든지 읽으십시오. 좋아하는 인용문을 모두 한 곳에 보관하세요."
+    "feature6Desc": "최고의 인용문을 저장하고 언제든지 읽으십시오. 좋아하는 인용문을 모두 한 곳에 보관하세요.",
+    "storeSoft": "다운로드"
   },
   "it": {
     "htmlLang": "it",
@@ -473,8 +489,8 @@
     "appStoreCountry": "it",
     "metaTitle": "Scanner citazioni libri - App OCR per scanner citazioni libri per",
     "metaDescription": "Scanner citazioni libri ti consente di eseguire la scansione OCR delle pagine, salvare citazioni di libri e rileggere i preferiti su iPhone. Costruisci la tua l",
-    "heroSlogan": "Scanner citazioni libri per iPhone",
-    "heroH1Before": "Scansiona, salva e leggi il tuo preferito",
+    "heroSlogan": "Scanner citazioni libri per iPhone e Android",
+    "heroH1Before": "le tue ",
     "heroH1Highlight": "citazioni di libri",
     "heroH1After": "",
     "heroTagline": "ti consente di scansionare qualsiasi pagina e salvare le citazioni dei libri. Scatta una foto, scegli i tuoi preferiti e conservali in un'unica libreria.",
@@ -517,7 +533,9 @@
     "feature5Title": "Chat sul vocabolario dell'intelligenza artificiale",
     "feature5Desc": "Chiedi all'IA informazioni sulle parole mentre raccogli le citazioni. Impara i significati più velocemente e continua a leggere il flusso.",
     "feature6Title": "Libreria dei preferiti",
-    "feature6Desc": "Salva le tue migliori citazioni e leggile in qualsiasi momento. Conserva tutte le citazioni preferite in un unico posto."
+    "feature6Desc": "Salva le tue migliori citazioni e leggile in qualsiasi momento. Conserva tutte le citazioni preferite in un unico posto.",
+    "storeSoft": "Scarica su",
+    "heroH1Lead": "Scansiona e salva"
   },
   "nl": {
     "htmlLang": "nl",
@@ -525,8 +543,8 @@
     "appStoreCountry": "nl",
     "metaTitle": "Boekcitaat Scanner - Boekcitaatscanner OCR-app voor iPhone",
     "metaDescription": "Met Boekcitaat Scanner kunt u pagina's OCR-scannen, boekcitaten opslaan en favorieten opnieuw lezen op de iPhone. Bouw uw persoonlijke offertebibliotheek met wo",
-    "heroSlogan": "Boekcitaatscanner voor iPhone",
-    "heroH1Before": "Scan, bewaar en lees uw favoriet",
+    "heroSlogan": "Boekcitaatscanner voor iPhone en Android",
+    "heroH1Before": "je favoriete ",
     "heroH1Highlight": "citaten uit boeken",
     "heroH1After": "",
     "heroTagline": "hiermee kunt u elke pagina scannen en boekcitaten opslaan. Maak een foto, kies uw favorieten en bewaar ze in één bibliotheek.",
@@ -569,7 +587,9 @@
     "feature5Title": "AI Woordenschatchat",
     "feature5Desc": "Vraag AI naar woorden terwijl je citaten verzamelt. Leer betekenissen sneller en blijf lezen.",
     "feature6Title": "Favorietenbibliotheek",
-    "feature6Desc": "Bewaar uw beste offertes en lees ze op elk gewenst moment. Bewaar elke favoriete quote op één plek."
+    "feature6Desc": "Bewaar uw beste offertes en lees ze op elk gewenst moment. Bewaar elke favoriete quote op één plek.",
+    "storeSoft": "Download in de",
+    "heroH1Lead": "Scan en bewaar"
   },
   "tr": {
     "htmlLang": "tr",
@@ -577,10 +597,10 @@
     "appStoreCountry": "tr",
     "metaTitle": "Kitap Alıntı Tarayıcı - Kitap Alıntı Tarayıcısı iPhone için OCR U",
     "metaDescription": "Kitap Alıntı Tarayıcı, iPhone'da sayfaları OCR ile taramanızı, kitap alıntılarını kaydetmenizi ve favorilerinizi yeniden okumanızı sağlar. Kelime tanımları ve y",
-    "heroSlogan": "iPhone için Kitap Alıntı Tarayıcı",
-    "heroH1Before": "Favorilerinizi tarayın, kaydedin ve okuyun",
-    "heroH1Highlight": "kitap alıntıları",
-    "heroH1After": "",
+    "heroSlogan": "iPhone ve Android için Kitap Alıntı Tarayıcı",
+    "heroH1Before": "Favori ",
+    "heroH1Highlight": "kitap alıntılarını",
+    "heroH1After": " tarayın ve kaydedin",
     "heroTagline": "herhangi bir sayfayı taramanızı ve kitap alıntılarını kaydetmenizi sağlar. Bir fotoğraf çekin, favorilerinizi seçin ve bunları tek bir kitaplıkta saklayın.",
     "sectionFeaturesLine1": "Kişisel alıntı kitaplığınız,",
     "sectionFeaturesLine2": "okuduğunuz her sayfadan inşa edilmiştir",
@@ -621,7 +641,8 @@
     "feature5Title": "Yapay Zeka Kelime Sohbeti",
     "feature5Desc": "Alıntıları toplarken yapay zekaya kelimeler hakkında sorular sorun. Anlamları daha hızlı öğrenin ve okuma akışını sürdürün.",
     "feature6Title": "Favoriler Kitaplığı",
-    "feature6Desc": "En iyi alıntılarınızı kaydedin ve istediğiniz zaman okuyun. Her favori alıntıyı tek bir yerde saklayın."
+    "feature6Desc": "En iyi alıntılarınızı kaydedin ve istediğiniz zaman okuyun. Her favori alıntıyı tek bir yerde saklayın.",
+    "storeSoft": "İndir"
   },
   "uk": {
     "htmlLang": "uk",
@@ -629,8 +650,8 @@
     "appStoreCountry": "ua",
     "metaTitle": "Сканер цитат із книг - Book Quote Scanner OCR App для iPhone",
     "metaDescription": "Сканер цитат із книг дає змогу сканувати сторінки за допомогою OCR, зберігати цитати з книг і перечитувати улюблені книги на iPhone. Створіть свою особисту бібл",
-    "heroSlogan": "Сканер цитат із книг для iPhone",
-    "heroH1Before": "Скануйте, зберігайте та читайте улюблені",
+    "heroSlogan": "Сканер цитат із книг для iPhone і Android",
+    "heroH1Before": "улюблені ",
     "heroH1Highlight": "книжкові цитати",
     "heroH1After": "",
     "heroTagline": "дозволяє сканувати будь-яку сторінку та зберігати цитати з книг. Робіть фотографії, вибирайте улюблені та зберігайте їх в одній бібліотеці.",
@@ -673,7 +694,9 @@
     "feature5Title": "AI Vocabulary Chat",
     "feature5Desc": "Запитуйте ШІ про слова під час збору цитат. Швидше вивчайте значення та продовжуйте читати.",
     "feature6Title": "Бібліотека вибраного",
-    "feature6Desc": "Зберігайте свої найкращі цитати та читайте їх будь-коли. Зберігайте кожну улюблену цитату в одному місці."
+    "feature6Desc": "Зберігайте свої найкращі цитати та читайте їх будь-коли. Зберігайте кожну улюблену цитату в одному місці.",
+    "storeSoft": "Завантажте з",
+    "heroH1Lead": "Скануйте і зберігайте"
   },
   "ar": {
     "htmlLang": "ar",
@@ -681,10 +704,10 @@
     "appStoreCountry": "sa",
     "metaTitle": "ماسح ترجمات الكتب - تطبيق الماسح الضوئي لإقتباسات الكتب OCR لأجهز",
     "metaDescription": "يتيح لك \"ماسح ترجمات الكتب\" مسح الصفحات ضوئيًا باستخدام تقنية التعرف الضوئي على الحروف، وحفظ اقتباسات الكتب، وإعادة قراءة المفضلة على iPhone. أنشئ مكتبة عروض ال",
-    "heroSlogan": "ماسحات المرسلات الكتب للآيفون",
-    "heroH1Before": "مسح وحفظ وقراءة المفضلة لديك",
-    "heroH1Highlight": "اقتباسات كتاب",
-    "heroH1After": "",
+    "heroSlogan": "ماسح اقتباسات الكتب لآيفون وأندرويد",
+    "heroH1Before": "",
+    "heroH1Highlight": "اقتباسات كتبك",
+    "heroH1After": " المفضلة",
     "heroTagline": "يتيح لك مسح أي صفحة وحفظ اقتباسات الكتب. التقط صورة، واختر مفضلاتك، واحتفظ بها في مكتبة واحدة.",
     "sectionFeaturesLine1": "مكتبة الاقتباسات الشخصية الخاصة بك،",
     "sectionFeaturesLine2": "بنيت من كل صفحة تقرأها",
@@ -726,7 +749,9 @@
     "feature5Desc": "اسأل الذكاء الاصطناعي عن الكلمات أثناء جمع علامات الاقتباس. تعلم المعاني بشكل أسرع واستمر في تدفق القراءة.",
     "feature6Title": "مكتبة المفضلة",
     "feature6Desc": "حفظ أفضل الأسعار الخاصة بك وقراءتها في أي وقت. احتفظ بكل اقتباس مفضل في مكان واحد.",
-    "htmlDir": "rtl"
+    "htmlDir": "rtl",
+    "storeSoft": "تنزيل من",
+    "heroH1Lead": "امسح واحفظ"
   },
   "sv": {
     "htmlLang": "sv",
@@ -734,9 +759,9 @@
     "appStoreCountry": "se",
     "metaTitle": "Bokcitat-skanner - Book Quote Scanner OCR App för iPhone",
     "metaDescription": "Bokcitat-skanner låter dig OCR-skanna sidor, spara bokcitat och läsa om favoriter på iPhone. Bygg ditt personliga offertbibliotek med orddefinitioner och AI-hjä",
-    "heroSlogan": "Bokcitat-skanner för iPhone",
-    "heroH1Before": "Skanna, spara och läs din favorit",
-    "heroH1Highlight": "bokcitat",
+    "heroSlogan": "Bokcitat-skanner för iPhone och Android",
+    "heroH1Before": "dina ",
+    "heroH1Highlight": "favoritbokcitat",
     "heroH1After": "",
     "heroTagline": "låter dig skanna vilken sida som helst och spara bokcitat. Ta ett foto, välj dina favoriter och förvara dem i ett bibliotek.",
     "sectionFeaturesLine1": "Ditt personliga offertbibliotek,",
@@ -778,7 +803,9 @@
     "feature5Title": "AI Vocabulary Chat",
     "feature5Desc": "Fråga AI om ord medan du samlar in citat. Lär dig betydelser snabbare och fortsätt läsflödet.",
     "feature6Title": "Favoritbibliotek",
-    "feature6Desc": "Spara dina bästa citat och läs dem när som helst. Håll alla favoritcitat på ett ställe."
+    "feature6Desc": "Spara dina bästa citat och läs dem när som helst. Håll alla favoritcitat på ett ställe.",
+    "storeSoft": "Ladda ner i",
+    "heroH1Lead": "Skanna och spara"
   },
   "zh-Hant": {
     "htmlLang": "zh-TW",
@@ -786,9 +813,9 @@
     "appStoreCountry": "tw",
     "metaTitle": "書籍摘錄掃描器 - iPhone 版書籍報價掃描器 OCR 應用程序 iPhone",
     "metaDescription": "書籍摘錄掃描器可讓您在 iPhone 上 OCR 掃描頁面、儲存書籍引言以及重讀收藏夾。利用單字定義和人工智慧來幫助建立您的個人報價庫。 書籍摘錄掃描器.",
-    "heroSlogan": "iPhone 版書籍摘錄掃描器",
-    "heroH1Before": "掃描、儲存並閱讀您喜歡的內容",
-    "heroH1Highlight": "書名言",
+    "heroSlogan": "iPhone 與 Android 版書籍摘錄掃描器",
+    "heroH1Before": "你喜歡的",
+    "heroH1Highlight": "書摘",
     "heroH1After": "",
     "heroTagline": "讓您掃描任何頁面並儲存書籍報價。拍攝一張照片，選擇您最喜歡的照片，並將它們保存在一個圖庫中。",
     "sectionFeaturesLine1": "您的個人報價庫，",
@@ -830,7 +857,9 @@
     "feature5Title": "人工智慧詞彙聊天",
     "feature5Desc": "在收集引言的同時向 AI 詢問單字。更快地學習意義並保持閱讀流暢。",
     "feature6Title": "收藏夾庫",
-    "feature6Desc": "保存您最好的報價並隨時閱讀。將每一句最喜歡的名言都放在一個地方。"
+    "feature6Desc": "保存您最好的報價並隨時閱讀。將每一句最喜歡的名言都放在一個地方。",
+    "storeSoft": "下載",
+    "heroH1Lead": "掃描並儲存"
   },
   "pt-PT": {
     "htmlLang": "pt-PT",
@@ -838,8 +867,8 @@
     "appStoreCountry": "pt",
     "metaTitle": "Scanner de remessas de livros - Book Quote Scanner OCR App para i",
     "metaDescription": "O Scanner de remessas de livros permite digitalizar páginas com OCR, salvar citações de livros e reler favoritos no iPhone. Crie sua biblioteca pessoal de citaç",
-    "heroSlogan": "Scanner de remessas de livros para iPhone",
-    "heroH1Before": "Digitalize, salve e leia seu favorito",
+    "heroSlogan": "Scanner de citações de livros para iPhone e Android",
+    "heroH1Before": "as suas ",
     "heroH1Highlight": "citações de livros",
     "heroH1After": "",
     "heroTagline": "permite digitalizar qualquer página e salvar citações de livros. Tire uma foto, escolha suas favoritas e guarde-as em uma biblioteca.",
@@ -882,7 +911,9 @@
     "feature5Title": "Bate-papo de vocabulário de IA",
     "feature5Desc": "Pergunte à IA sobre palavras enquanto coleta citações. Aprenda os significados mais rapidamente e mantenha o fluxo de leitura.",
     "feature6Title": "Biblioteca de Favoritos",
-    "feature6Desc": "Salve suas melhores citações e leia-as a qualquer momento. Mantenha todas as citações favoritas em um só lugar."
+    "feature6Desc": "Salve suas melhores citações e leia-as a qualquer momento. Mantenha todas as citações favoritas em um só lugar.",
+    "storeSoft": "Descarregar na",
+    "heroH1Lead": "Digitalize e guarde"
   },
   "vi": {
     "htmlLang": "vi",
@@ -890,10 +921,10 @@
     "appStoreCountry": "vn",
     "metaTitle": "Máy quét trích dẫn sách - Book Quote Scanner OCR App for iPhone",
     "metaDescription": "Máy quét trích dẫn sách cho phép bạn quét các trang OCR, lưu trích dẫn sách và đọc lại các mục yêu thích trên iPhone. Xây dựng thư viện trích dẫn cá nhân của bạ",
-    "heroSlogan": "Máy quét trích dẫn dành cho iPhone",
-    "heroH1Before": "Quét, lưu và đọc yêu thích của bạn",
+    "heroSlogan": "Máy quét trích dẫn cho iPhone và Android",
+    "heroH1Before": "",
     "heroH1Highlight": "trích dẫn sách",
-    "heroH1After": "",
+    "heroH1After": " yêu thích của bạn",
     "heroTagline": "cho phép bạn quét bất kỳ trang nào và lưu báo giá sách. Chụp ảnh, chọn mục yêu thích của bạn và lưu chúng vào một thư viện.",
     "sectionFeaturesLine1": "Thư viện báo giá cá nhân của bạn,",
     "sectionFeaturesLine2": "được xây dựng từ mỗi trang bạn đọc",
@@ -934,7 +965,9 @@
     "feature5Title": "Trò chuyện từ vựng AI",
     "feature5Desc": "Hỏi AI về các từ trong khi thu thập dấu ngoặc kép. Tìm hiểu ý nghĩa nhanh hơn và tiếp tục đọc.",
     "feature6Title": "Thư viện yêu thích",
-    "feature6Desc": "Lưu các trích dẫn hay nhất của bạn và đọc chúng bất cứ lúc nào. Giữ mọi trích dẫn yêu thích ở một nơi."
+    "feature6Desc": "Lưu các trích dẫn hay nhất của bạn và đọc chúng bất cứ lúc nào. Giữ mọi trích dẫn yêu thích ở một nơi.",
+    "storeSoft": "Tải về trên",
+    "heroH1Lead": "Quét và lưu"
   },
   "id": {
     "htmlLang": "id",
@@ -942,10 +975,10 @@
     "appStoreCountry": "id",
     "metaTitle": "Pemindai Kutipan Buku - Aplikasi OCR Pemindai Kutipan Buku untuk",
     "metaDescription": "Pemindai Kutipan Buku memungkinkan Anda memindai halaman secara OCR, menyimpan kutipan buku, dan membaca ulang favorit di iPhone. Bangun perpustakaan kutipan pr",
-    "heroSlogan": "Pemindai Kutipan Buku untuk iPhone",
-    "heroH1Before": "Pindai, simpan, dan baca favorit Anda",
+    "heroSlogan": "Pemindai Kutipan Buku untuk iPhone dan Android",
+    "heroH1Before": "",
     "heroH1Highlight": "kutipan buku",
-    "heroH1After": "",
+    "heroH1After": " favorit Anda",
     "heroTagline": "memungkinkan Anda memindai halaman mana pun dan menyimpan kutipan buku. Ambil foto, pilih favorit Anda, dan simpan di satu perpustakaan.",
     "sectionFeaturesLine1": "Perpustakaan kutipan pribadi Anda,",
     "sectionFeaturesLine2": "dibangun dari setiap halaman yang Anda baca",
@@ -986,7 +1019,9 @@
     "feature5Title": "Obrolan Kosakata AI",
     "feature5Desc": "Tanyakan AI tentang kata-kata sambil mengumpulkan kutipan. Pelajari makna lebih cepat dan terus membaca mengalir.",
     "feature6Title": "Perpustakaan Favorit",
-    "feature6Desc": "Simpan kutipan terbaik Anda dan bacalah kapan saja. Simpan setiap kutipan favorit di satu tempat."
+    "feature6Desc": "Simpan kutipan terbaik Anda dan bacalah kapan saja. Simpan setiap kutipan favorit di satu tempat.",
+    "storeSoft": "Unduh di",
+    "heroH1Lead": "Pindai dan simpan"
   },
   "th": {
     "htmlLang": "th",
@@ -994,10 +1029,10 @@
     "appStoreCountry": "th",
     "metaTitle": "รวบรวมเนื้อหาจากหนังสือ - Book Quote Scanner OCR App for iPhone",
     "metaDescription": "รวบรวมเนื้อหาจากหนังสือช่วยให้คุณสามารถสแกนหน้า OCR บันทึกราคาหนังสือ และอ่านซ้ำรายการโปรดบน iPhone สร้างคลังคำพูดส่วนตัวของคุณด้วยคำจำกัดความและความช่วยเหลือจา",
-    "heroSlogan": "บันทึกเรื่องราวจากหนังสือสำหรับ iPhone",
-    "heroH1Before": "สแกน บันทึก และอ่านรายการโปรดของคุณ",
-    "heroH1Highlight": "ราคาหนังสือ",
-    "heroH1After": "",
+    "heroSlogan": "เครื่องสแกนคำคมหนังสือสำหรับ iPhone และ Android",
+    "heroH1Before": "",
+    "heroH1Highlight": "คำคมหนังสือ",
+    "heroH1After": "ที่คุณชอบ",
     "heroTagline": "ให้คุณสแกนหน้าใดก็ได้และบันทึกราคาหนังสือ ถ่ายภาพ เลือกรายการโปรดของคุณ และเก็บไว้ในไลบรารีเดียว",
     "sectionFeaturesLine1": "ห้องสมุดคำพูดส่วนตัวของคุณ",
     "sectionFeaturesLine2": "สร้างจากทุกหน้าที่คุณอ่าน",
@@ -1038,7 +1073,9 @@
     "feature5Title": "แชทคำศัพท์ AI",
     "feature5Desc": "ถาม AI เกี่ยวกับคำศัพท์ขณะรวบรวมคำพูด เรียนรู้ความหมายได้เร็วขึ้นและอ่านต่อเนื่อง",
     "feature6Title": "ห้องสมุดรายการโปรด",
-    "feature6Desc": "บันทึกคำพูดที่ดีที่สุดของคุณและอ่านได้ตลอดเวลา เก็บทุกคำพูดที่ชื่นชอบไว้ในที่เดียว"
+    "feature6Desc": "บันทึกคำพูดที่ดีที่สุดของคุณและอ่านได้ตลอดเวลา เก็บทุกคำพูดที่ชื่นชอบไว้ในที่เดียว",
+    "storeSoft": "ดาวน์โหลดบน",
+    "heroH1Lead": "สแกนและบันทึก"
   },
   "cs": {
     "htmlLang": "cs",
@@ -1046,8 +1083,8 @@
     "appStoreCountry": "cz",
     "metaTitle": "Skenovač citátů z knih - OCR aplikace Skener cenových nabídek pro",
     "metaDescription": "Skenovač citátů z knih vám umožňuje OCR skenovat stránky, ukládat citáty knih a znovu číst oblíbené položky na iPhone. Sestavte si svou osobní knihovnu nabídek",
-    "heroSlogan": "Skenovač citátů z knih pro iPhone",
-    "heroH1Before": "Naskenujte, uložte a přečtěte si své oblíbené",
+    "heroSlogan": "Skenovač citátů z knih pro iPhone a Android",
+    "heroH1Before": "své oblíbené ",
     "heroH1Highlight": "citáty z knih",
     "heroH1After": "",
     "heroTagline": "umožňuje skenovat libovolnou stránku a ukládat nabídky knih. Pořiďte fotku, vyberte si své oblíbené a mějte je v jedné knihovně.",
@@ -1090,7 +1127,9 @@
     "feature5Title": "Chat s AI slovníkem",
     "feature5Desc": "Při sbírání uvozovek se ptejte AI na slova. Naučte se významy rychleji a pokračujte ve čtení.",
     "feature6Title": "Knihovna oblíbených",
-    "feature6Desc": "Uložte si své nejlepší citáty a kdykoli si je přečtěte. Mějte všechny oblíbené citáty na jednom místě."
+    "feature6Desc": "Uložte si své nejlepší citáty a kdykoli si je přečtěte. Mějte všechny oblíbené citáty na jednom místě.",
+    "storeSoft": "Stáhnout v",
+    "heroH1Lead": "Naskenujte a uložte"
   },
   "da": {
     "htmlLang": "da",
@@ -1098,9 +1137,9 @@
     "appStoreCountry": "dk",
     "metaTitle": "Bogcitatskanner - Book Quote Scanner OCR App til iPhone",
     "metaDescription": "Bogcitatskanner lader dig OCR-scanne sider, gemme bogcitater og genlæse favoritter på iPhone. Byg dit personlige citatbibliotek med orddefinitioner og AI-hjælp.",
-    "heroSlogan": "Bogcitatskanner til iPhone",
-    "heroH1Before": "Scan, gem og læs din favorit",
-    "heroH1Highlight": "bog citater",
+    "heroSlogan": "Bogcitatskanner til iPhone og Android",
+    "heroH1Before": "dine ",
+    "heroH1Highlight": "favoritbogcitater",
     "heroH1After": "",
     "heroTagline": "lader dig scanne enhver side og gemme bogcitater. Tag et billede, vælg dine favoritter, og gem dem i ét bibliotek.",
     "sectionFeaturesLine1": "Dit personlige citatbibliotek,",
@@ -1142,7 +1181,9 @@
     "feature5Title": "AI Ordforråd Chat",
     "feature5Desc": "Spørg AI om ord, mens du samler citater. Lær betydninger hurtigere og fortsæt med at læse flow.",
     "feature6Title": "Favoritbibliotek",
-    "feature6Desc": "Gem dine bedste citater og læs dem når som helst. Gem hvert yndlingscitat ét sted."
+    "feature6Desc": "Gem dine bedste citater og læs dem når som helst. Gem hvert yndlingscitat ét sted.",
+    "storeSoft": "Hent i",
+    "heroH1Lead": "Scan og gem"
   },
   "nb": {
     "htmlLang": "nb",
@@ -1150,9 +1191,9 @@
     "appStoreCountry": "no",
     "metaTitle": "Bok sitat skanner - Book Quote Scanner OCR App for iPhone",
     "metaDescription": "Bok sitat skanner lar deg OCR-skanne sider, lagre boksitater og lese favoritter på nytt på iPhone. Bygg ditt personlige sitatbibliotek med orddefinisjoner og AI",
-    "heroSlogan": "Bok sitat skanner for iPhone",
-    "heroH1Before": "Skann, lagre og les favoritten din",
-    "heroH1Highlight": "bok sitater",
+    "heroSlogan": "Boksitatskanner for iPhone og Android",
+    "heroH1Before": "",
+    "heroH1Highlight": "favorittboksitatene",
     "heroH1After": "",
     "heroTagline": "lar deg skanne hvilken som helst side og lagre boksitater. Ta et bilde, velg favorittene dine og oppbevar dem i ett bibliotek.",
     "sectionFeaturesLine1": "Ditt personlige sitatbibliotek,",
@@ -1194,7 +1235,9 @@
     "feature5Title": "AI Vocabulary Chat",
     "feature5Desc": "Spør AI om ord mens du samler inn sitater. Lær betydninger raskere og fortsett leseflyten.",
     "feature6Title": "Favorittbibliotek",
-    "feature6Desc": "Lagre dine beste sitater og les dem når som helst. Oppbevar hvert favorittsitat på ett sted."
+    "feature6Desc": "Lagre dine beste sitater og les dem når som helst. Oppbevar hvert favorittsitat på ett sted.",
+    "storeSoft": "Last ned i",
+    "heroH1Lead": "Skann og lagre"
   },
   "fi": {
     "htmlLang": "fi",
@@ -1202,9 +1245,9 @@
     "appStoreCountry": "fi",
     "metaTitle": "Kirjalainausskanneri - Book Quote Scanner OCR App iPhonelle",
     "metaDescription": "Kirjalainausskannerin avulla voit skannata OCR-sivuja, tallentaa kirjojen lainauksia ja lukea suosikkeja uudelleen iPhonella. Rakenna henkilökohtainen lainauski",
-    "heroSlogan": "Kirjalainausskanneri iPhonelle",
-    "heroH1Before": "Skannaa, tallenna ja lue suosikkisi",
-    "heroH1Highlight": "kirjojen lainauksia",
+    "heroSlogan": "Kirjalainausskanneri iPhonelle ja Androidille",
+    "heroH1Before": "",
+    "heroH1Highlight": "suosikkikirjalainauksesi",
     "heroH1After": "",
     "heroTagline": "voit skannata minkä tahansa sivun ja tallentaa kirjojen lainauksia. Ota valokuva, valitse suosikkisi ja säilytä ne yhdessä kirjastossa.",
     "sectionFeaturesLine1": "Henkilökohtainen lainauskirjastosi,",
@@ -1246,7 +1289,9 @@
     "feature5Title": "AI sanastokeskustelu",
     "feature5Desc": "Kysy tekoälystä sanoista lainauksia kerääessäsi. Opi merkityksiä nopeammin ja jatka lukemista.",
     "feature6Title": "Suosikkikirjasto",
-    "feature6Desc": "Tallenna parhaat lainauksesi ja lue ne milloin tahansa. Pidä jokainen suosikkilainaus yhdessä paikassa."
+    "feature6Desc": "Tallenna parhaat lainauksesi ja lue ne milloin tahansa. Pidä jokainen suosikkilainaus yhdessä paikassa.",
+    "storeSoft": "Lataa",
+    "heroH1Lead": "Skannaa ja tallenna"
   },
   "he": {
     "htmlLang": "he",
@@ -1254,10 +1299,10 @@
     "appStoreCountry": "il",
     "metaTitle": "סורק ציטוטי ספרים - Book Quote Scanner אפליקציית OCR לאייפון",
     "metaDescription": "סורק ציטוטי ספרים מאפשר לך לסרוק דפים OCR, לשמור ציטוטים של ספרים ולקרוא מחדש מועדפים באייפון. בנה את ספריית הציטוטים האישית שלך עם הגדרות מילים ועזרה בינה מלאכ",
-    "heroSlogan": "סורק ציטוטי ספרים לאייפון",
-    "heroH1Before": "סרוק, שמור וקרא את המועדף עליך",
-    "heroH1Highlight": "ציטוטים של ספרים",
-    "heroH1After": "",
+    "heroSlogan": "סורק ציטוטי ספרים לאייפון ולאנדרואיד",
+    "heroH1Before": "את ",
+    "heroH1Highlight": "ציטוטי הספרים",
+    "heroH1After": " האהובים",
     "heroTagline": "מאפשר לך לסרוק כל עמוד ולשמור ציטוטים של ספרים. צלם תמונה, בחר את המועדפים שלך ושמור אותם בספרייה אחת.",
     "sectionFeaturesLine1": "ספריית הציטוטים האישית שלך,",
     "sectionFeaturesLine2": "בנוי מכל עמוד שאתה קורא",
@@ -1299,7 +1344,9 @@
     "feature5Desc": "שאל בינה מלאכותית על מילים בזמן איסוף ציטוטים. למד משמעויות מהר יותר ושמור על זרימת קריאה.",
     "feature6Title": "ספריית מועדפים",
     "feature6Desc": "שמור את הציטוטים הטובים ביותר שלך וקרא אותם בכל עת. שמור כל ציטוט אהוב במקום אחד.",
-    "htmlDir": "rtl"
+    "htmlDir": "rtl",
+    "storeSoft": "הורדה מ־",
+    "heroH1Lead": "סרקו ושמרו"
   },
   "ca": {
     "htmlLang": "ca",
@@ -1307,8 +1354,8 @@
     "appStoreCountry": "es",
     "metaTitle": "Escàner de Cites de Llibres - Book Quote Scanner OCR App for iPho",
     "metaDescription": "Escàner de Cites de Llibres us permet escanejar pàgines OCR, desar cites de llibres i rellegir els preferits a l'iPhone. Creeu la vostra biblioteca de pressupos",
-    "heroSlogan": "Escàner de Cites de Llibres per a iPhone",
-    "heroH1Before": "Escaneja, desa i llegeix el teu favorit",
+    "heroSlogan": "Escàner de cites de llibres per a iPhone i Android",
+    "heroH1Before": "les teves ",
     "heroH1Highlight": "cites de llibres",
     "heroH1After": "",
     "heroTagline": "us permet escanejar qualsevol pàgina i desar cites de llibres. Fes una foto, tria les teves preferides i guarda-les en una biblioteca.",
@@ -1351,7 +1398,9 @@
     "feature5Title": "Xat de vocabulari AI",
     "feature5Desc": "Pregunteu a la intel·ligència artificial sobre paraules mentre recolliu cites. Aprèn els significats més ràpidament i segueix el flux de lectura.",
     "feature6Title": "Biblioteca de favorits",
-    "feature6Desc": "Guardeu les vostres millors cotitzacions i llegiu-les en qualsevol moment. Mantingui cada cita preferida en un sol lloc."
+    "feature6Desc": "Guardeu les vostres millors cotitzacions i llegiu-les en qualsevol moment. Mantingui cada cita preferida en un sol lloc.",
+    "storeSoft": "Descarrega a",
+    "heroH1Lead": "Escaneja i desa"
   },
   "hr": {
     "htmlLang": "hr",
@@ -1359,8 +1408,8 @@
     "appStoreCountry": "hr",
     "metaTitle": "Skeniranje citata iz knjiga - Book Quote Scanner OCR App for iPho",
     "metaDescription": "Skeniranje citata iz knjiga omogućuje vam OCR skeniranje stranica, spremanje citata knjiga i ponovno čitanje omiljenih na iPhoneu. Izgradite svoju osobnu biblio",
-    "heroSlogan": "Skeniranje citata iz knjiga za iPhone",
-    "heroH1Before": "Skenirajte, spremite i čitajte svoje omiljene",
+    "heroSlogan": "Skener citata iz knjiga za iPhone i Android",
+    "heroH1Before": "omiljene ",
     "heroH1Highlight": "citati iz knjiga",
     "heroH1After": "",
     "heroTagline": "omogućuje skeniranje bilo koje stranice i spremanje citata iz knjiga. Snimite fotografiju, odaberite svoje favorite i čuvajte ih u jednoj biblioteci.",
@@ -1403,7 +1452,9 @@
     "feature5Title": "AI Vocabulary Chat",
     "feature5Desc": "Pitajte AI o riječima dok skupljate citate. Brže naučite značenja i nastavite s čitanjem.",
     "feature6Title": "Knjižnica favorita",
-    "feature6Desc": "Spremite svoje najbolje citate i čitajte ih bilo kada. Držite svaki omiljeni citat na jednom mjestu."
+    "feature6Desc": "Spremite svoje najbolje citate i čitajte ih bilo kada. Držite svaki omiljeni citat na jednom mjestu.",
+    "storeSoft": "Preuzmi u",
+    "heroH1Lead": "Skenirajte i spremite"
   },
   "el": {
     "htmlLang": "el",
@@ -1411,8 +1462,8 @@
     "appStoreCountry": "gr",
     "metaTitle": "Σκάνερ αποφθεγμάτων βιβλίων - Book Quote Scanner OCR App for iPho",
     "metaDescription": "Ο Σκάνερ αποφθεγμάτων βιβλίων σάς επιτρέπει να σαρώσετε σελίδες OCR, να αποθηκεύσετε αποσπάσματα βιβλίων και να διαβάσετε ξανά τα αγαπημένα στο iPhone. Δημιουργ",
-    "heroSlogan": "Σκάνερ αποφθεγμάτων βιβλίων for iPhone",
-    "heroH1Before": "Σαρώστε, αποθηκεύστε και διαβάστε το αγαπημένο σας",
+    "heroSlogan": "Σκάνερ αποφθεγμάτων βιβλίων για iPhone και Android",
+    "heroH1Before": "τα αγαπημένα σας ",
     "heroH1Highlight": "αποσπάσματα βιβλίων",
     "heroH1After": "",
     "heroTagline": "σας επιτρέπει να σαρώσετε οποιαδήποτε σελίδα και να αποθηκεύσετε εισαγωγικά βιβλίων. Τραβήξτε μια φωτογραφία, επιλέξτε τα αγαπημένα σας και κρατήστε τα σε μία βιβλιοθήκη.",
@@ -1455,7 +1506,9 @@
     "feature5Title": "Συνομιλία λεξιλογίου AI",
     "feature5Desc": "Ρωτήστε AI για λέξεις ενώ συλλέγετε εισαγωγικά. Μάθετε τα νοήματα πιο γρήγορα και συνεχίστε τη ροή της ανάγνωσης.",
     "feature6Title": "Αγαπημένη Βιβλιοθήκη",
-    "feature6Desc": "Αποθηκεύστε τα καλύτερα αποσπάσματα σας και διαβάστε τα ανά πάσα στιγμή. Κρατήστε κάθε αγαπημένο απόσπασμα σε ένα μέρος."
+    "feature6Desc": "Αποθηκεύστε τα καλύτερα αποσπάσματα σας και διαβάστε τα ανά πάσα στιγμή. Κρατήστε κάθε αγαπημένο απόσπασμα σε ένα μέρος.",
+    "storeSoft": "Λήψη από το",
+    "heroH1Lead": "Σαρώστε και αποθηκεύστε"
   },
   "hi": {
     "htmlLang": "hi",
@@ -1463,10 +1516,10 @@
     "appStoreCountry": "in",
     "metaTitle": "बुक कोट वर्गीकरण - iPhone के लिए बुक कोट स्कैनर OCR ऐप",
     "metaDescription": "बुक कोट कैटलॉग आपको ओसीआर-स्कैन पृष्ठों, पुस्तक उद्धरणों को सहेजने और आईफोन पर पसंदीदा को दोबारा पढ़ने की सुविधा देता है। शब्द परिभाषाओं और एआई सहायता से अपनी व",
-    "heroSlogan": "iPhone के लिए बुक कोट कैटलॉग",
-    "heroH1Before": "स्कैन करें, सहेजें और अपना पसंदीदा पढ़ें",
+    "heroSlogan": "iPhone और Android के लिए बुक कोट स्कैनर",
+    "heroH1Before": "अपने पसंदीदा ",
     "heroH1Highlight": "पुस्तक उद्धरण",
-    "heroH1After": "",
+    "heroH1After": " स्कैन करें और सहेजें",
     "heroTagline": "आपको किसी भी पृष्ठ को स्कैन करने और पुस्तक उद्धरण सहेजने की सुविधा देता है। एक फोटो खींचें, अपना पसंदीदा चुनें और उन्हें एक लाइब्रेरी में रखें।",
     "sectionFeaturesLine1": "आपकी व्यक्तिगत उद्धरण लाइब्रेरी,",
     "sectionFeaturesLine2": "आपके द्वारा पढ़े गए प्रत्येक पृष्ठ से निर्मित",
@@ -1507,7 +1560,8 @@
     "feature5Title": "एआई शब्दावली चैट",
     "feature5Desc": "उद्धरण एकत्र करते समय एआई से शब्दों के बारे में पूछें। तेजी से अर्थ सीखें और पढ़ने का प्रवाह जारी रखें।",
     "feature6Title": "पसंदीदा लाइब्रेरी",
-    "feature6Desc": "अपने सर्वोत्तम उद्धरण सहेजें और उन्हें कभी भी पढ़ें। प्रत्येक पसंदीदा उद्धरण को एक स्थान पर रखें।"
+    "feature6Desc": "अपने सर्वोत्तम उद्धरण सहेजें और उन्हें कभी भी पढ़ें। प्रत्येक पसंदीदा उद्धरण को एक स्थान पर रखें।",
+    "storeSoft": "डाउनलोड करें"
   },
   "hu": {
     "htmlLang": "hu",
@@ -1515,9 +1569,9 @@
     "appStoreCountry": "hu",
     "metaTitle": "Könyv idézet szkenner - Book Quote Scanner OCR App for iPhone",
     "metaDescription": "A Könyv idézet szkenner lehetővé teszi az oldalak OCR-szkennelését, a könyvidézetek mentését és a kedvencek újraolvasását iPhone-on. Készítse el személyes idéze",
-    "heroSlogan": "Könyv idézet szkenner for iPhone",
-    "heroH1Before": "Szkennelje be, mentse és olvassa el kedvencét",
-    "heroH1Highlight": "könyv idézetek",
+    "heroSlogan": "Könyv idézet szkenner iPhone-ra és Androidra",
+    "heroH1Before": "kedvenc ",
+    "heroH1Highlight": "könyv idézeteit",
     "heroH1After": "",
     "heroTagline": "lehetővé teszi bármely oldal beszkennelését és könyv idézetek mentését. Készítsen fényképet, válassza ki kedvenceit, és tartsa őket egy könyvtárban.",
     "sectionFeaturesLine1": "Az Ön személyes ajánlatkönyvtára,",
@@ -1559,7 +1613,9 @@
     "feature5Title": "AI Vocabulary Chat",
     "feature5Desc": "Kérdezd meg az AI-t a szavakról az idézetek gyűjtése közben. Tanulja meg gyorsabban a jelentéseket, és folytassa az olvasás folyamatát.",
     "feature6Title": "Kedvencek könyvtára",
-    "feature6Desc": "Mentse el legjobb idézeteit, és bármikor elolvashatja. Tartson minden kedvenc idézetet egy helyen."
+    "feature6Desc": "Mentse el legjobb idézeteit, és bármikor elolvashatja. Tartson minden kedvenc idézetet egy helyen.",
+    "storeSoft": "Letöltés",
+    "heroH1Lead": "Szkennelje be és mentse"
   },
   "ms": {
     "htmlLang": "ms",
@@ -1567,10 +1623,10 @@
     "appStoreCountry": "my",
     "metaTitle": "Pengimbas Petikan Buku - Apl OCR Pengimbas Petikan Buku untuk iPh",
     "metaDescription": "Pengimbas Petikan Buku membolehkan anda mengimbas halaman OCR, menyimpan petikan buku dan membaca semula kegemaran pada iPhone. Bina perpustakaan petikan periba",
-    "heroSlogan": "Pengimbas Petikan Buku for iPhone",
-    "heroH1Before": "Imbas, simpan dan baca kegemaran anda",
+    "heroSlogan": "Pengimbas Petikan Buku untuk iPhone dan Android",
+    "heroH1Before": "",
     "heroH1Highlight": "petikan buku",
-    "heroH1After": "",
+    "heroH1After": " kegemaran anda",
     "heroTagline": "membolehkan anda mengimbas mana-mana halaman dan menyimpan petikan buku. Tangkap foto, pilih kegemaran anda dan simpannya dalam satu pustaka.",
     "sectionFeaturesLine1": "Perpustakaan petikan peribadi anda,",
     "sectionFeaturesLine2": "dibina daripada setiap halaman yang anda baca",
@@ -1611,7 +1667,9 @@
     "feature5Title": "AI Vocabulary Chat",
     "feature5Desc": "Tanya AI tentang perkataan semasa mengumpul petikan. Ketahui makna dengan lebih pantas dan teruskan aliran bacaan.",
     "feature6Title": "Perpustakaan Kegemaran",
-    "feature6Desc": "Simpan petikan terbaik anda dan bacanya pada bila-bila masa. Simpan setiap petikan kegemaran di satu tempat."
+    "feature6Desc": "Simpan petikan terbaik anda dan bacanya pada bila-bila masa. Simpan setiap petikan kegemaran di satu tempat.",
+    "storeSoft": "Muat turun di",
+    "heroH1Lead": "Imbas dan simpan"
   },
   "es-MX": {
     "htmlLang": "es-MX",
@@ -1619,8 +1677,8 @@
     "appStoreCountry": "mx",
     "metaTitle": "Escáner de citas de libros - Aplicación OCR Book Quote Scanner pa",
     "metaDescription": "Escáner de citas de libros te permite escanear páginas con OCR, guardar citas de libros y volver a leer favoritos en iPhone. Cree su biblioteca de cotizaciones",
-    "heroSlogan": "Escáner de citas de libros para iPhone",
-    "heroH1Before": "Escanea, guarda y lee tu favorito",
+    "heroSlogan": "Escáner de citas de libros para iPhone y Android",
+    "heroH1Before": "tus ",
     "heroH1Highlight": "citas de libros",
     "heroH1After": "",
     "heroTagline": "le permite escanear cualquier página y guardar citas de libros. Toma una foto, elige tus favoritas y guárdalas en una biblioteca.",
@@ -1663,7 +1721,9 @@
     "feature5Title": "Chat de vocabulario de IA",
     "feature5Desc": "Pregúntele a AI sobre palabras mientras recopila citas. Aprenda los significados más rápido y siga leyendo.",
     "feature6Title": "Biblioteca de favoritos",
-    "feature6Desc": "Guarde sus mejores citas y léalas en cualquier momento. Mantenga todas las citas favoritas en un solo lugar."
+    "feature6Desc": "Guarde sus mejores citas y léalas en cualquier momento. Mantenga todas las citas favoritas en un solo lugar.",
+    "storeSoft": "Descárgalo en el",
+    "heroH1Lead": "Escanea y guarda"
   },
   "ro": {
     "htmlLang": "ro",
@@ -1671,10 +1731,10 @@
     "appStoreCountry": "ro",
     "metaTitle": "Scanner citate cărți - Book Quote Scanner OCR App pentru iPhone",
     "metaDescription": "Scanner citate cărți vă permite să scanați pagini OCR, să salvați citate din cărți și să recitiți favoritele pe iPhone. Construiește-ți biblioteca personală de",
-    "heroSlogan": "Scanner citate cărți pentru iPhone",
-    "heroH1Before": "Scanează, salvează și citește preferatul tău",
-    "heroH1Highlight": "citate de carte",
-    "heroH1After": "",
+    "heroSlogan": "Scanner citate cărți pentru iPhone și Android",
+    "heroH1Before": "",
+    "heroH1Highlight": "citatele de carte",
+    "heroH1After": " preferate",
     "heroTagline": "vă permite să scanați orice pagină și să salvați citate de carte. Faceți o fotografie, alegeți-vă preferatele și păstrați-le într-o singură bibliotecă.",
     "sectionFeaturesLine1": "Biblioteca dvs. personală de cotații,",
     "sectionFeaturesLine2": "construit din fiecare pagină citită",
@@ -1715,7 +1775,9 @@
     "feature5Title": "Chat de vocabular AI",
     "feature5Desc": "Întrebați AI despre cuvinte în timp ce colectați citate. Învață mai repede semnificațiile și continuă să citești.",
     "feature6Title": "Biblioteca Favorite",
-    "feature6Desc": "Salvează-ți cele mai bune citate și citește-le oricând. Păstrați fiecare citat preferat într-un singur loc."
+    "feature6Desc": "Salvează-ți cele mai bune citate și citește-le oricând. Păstrați fiecare citat preferat într-un singur loc.",
+    "storeSoft": "Descarcă din",
+    "heroH1Lead": "Scanează și salvează"
   },
   "sk": {
     "htmlLang": "sk",
@@ -1723,8 +1785,8 @@
     "appStoreCountry": "sk",
     "metaTitle": "Skenovač citátov z kníh - OCR aplikácia Book Quote Scanner pre iP",
     "metaDescription": "Skenovač citátov z kníh umožňuje OCR skenovanie strán, ukladanie citátov z kníh a opätovné čítanie obľúbených položiek na iPhone. Zostavte si svoju osobnú knižn",
-    "heroSlogan": "Skenovač citátov z kníh pre iPhone",
-    "heroH1Before": "Naskenujte, uložte a prečítajte si svoje obľúbené",
+    "heroSlogan": "Skenovač citátov z kníh pre iPhone a Android",
+    "heroH1Before": "svoje obľúbené ",
     "heroH1Highlight": "citáty z kníh",
     "heroH1After": "",
     "heroTagline": "umožňuje naskenovať ľubovoľnú stranu a uložiť citácie kníh. Urobte fotografiu, vyberte si svoje obľúbené a uložte ich do jednej knižnice.",
@@ -1767,7 +1829,9 @@
     "feature5Title": "Chat so slovníkom AI",
     "feature5Desc": "Opýtajte sa AI na slová pri zbieraní citátov. Naučte sa významy rýchlejšie a pokračujte v čítaní.",
     "feature6Title": "Knižnica obľúbených",
-    "feature6Desc": "Uložte si svoje najlepšie citáty a prečítajte si ich kedykoľvek. Majte všetky obľúbené citáty na jednom mieste."
+    "feature6Desc": "Uložte si svoje najlepšie citáty a prečítajte si ich kedykoľvek. Majte všetky obľúbené citáty na jednom mieste.",
+    "storeSoft": "Stiahnuť v",
+    "heroH1Lead": "Naskenujte a uložte"
   },
   "fr-CA": {
     "htmlLang": "fr-CA",
@@ -1775,8 +1839,8 @@
     "appStoreCountry": "ca",
     "metaTitle": "Scan de citations de livres - Book Quote Scanner OCR App pour iPh",
     "metaDescription": "Scan de citations de livres vous permet de numériser des pages par OCR, d'enregistrer des citations de livres et de relire vos favoris sur iPhone. Créez votre b",
-    "heroSlogan": "Scan de citations de livres pour iPhone",
-    "heroH1Before": "Scannez, enregistrez et lisez votre favori",
+    "heroSlogan": "Scan de citations de livres pour iPhone et Android",
+    "heroH1Before": "vos ",
     "heroH1Highlight": "citations de livres",
     "heroH1After": "",
     "heroTagline": "vous permet de numériser n'importe quelle page et d'enregistrer des citations de livres. Prenez une photo, choisissez vos préférées et conservez-les dans une seule bibliothèque.",
@@ -1819,6 +1883,8 @@
     "feature5Title": "Chat de vocabulaire IA",
     "feature5Desc": "Interrogez l'IA sur les mots tout en collectant des citations. Apprenez les significations plus rapidement et continuez à lire.",
     "feature6Title": "Bibliothèque de favoris",
-    "feature6Desc": "Enregistrez vos meilleures citations et lisez-les à tout moment. Conservez chaque citation préférée au même endroit."
+    "feature6Desc": "Enregistrez vos meilleures citations et lisez-les à tout moment. Conservez chaque citation préférée au même endroit.",
+    "storeSoft": "Télécharger dans",
+    "heroH1Lead": "Scannez et enregistrez"
   }
 }

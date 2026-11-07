@@ -127,12 +127,29 @@ function titleSep(code, left, right) {
   return NO_SPACE_LOCALES.has(code) ? '' : ' ';
 }
 
-function appLink(storeUrl, appName) {
-  return `<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a>`;
+function appLink(_storeUrl, appName) {
+  return appName;
 }
 
 function linkedText(before, appName, after, storeUrl) {
   return `${spaceAfter(before)}${appLink(storeUrl, appName)}${spaceBefore(after)}`;
+}
+
+function ogLocaleFor(code) {
+  return code === 'en' ? 'en_US' : phrases[code].ogLocale;
+}
+
+function applyOgLocales(html, code) {
+  const current = ogLocaleFor(code);
+  const alts = ALL_LOCALES
+    .filter((locale) => locale.code !== code)
+    .map((locale) => `    <meta property="og:locale:alternate" content="${ogLocaleFor(locale.code)}">`)
+    .join('\n');
+  html = html.replace(/\n\s*<meta property="og:locale:alternate" content="[^"]*">/g, '');
+  return html.replace(
+    /<meta property="og:locale" content="[^"]*">/,
+    `<meta property="og:locale" content="${current}">\n${alts}`,
+  );
 }
 
 function hreflangBlock() {
@@ -161,6 +178,8 @@ function localeRedirectScript() {
   const routesJson = JSON.stringify(Object.fromEntries(routeEntries));
   return `    <script>
         (function () {
+            var ua = navigator.userAgent || "";
+            if (/bot|crawl|spider|slurp|preview|facebookexternalhit|embedly|pinterest|whatsapp|telegram/i.test(ua)) return;
             var routes = ${routesJson};
             var path = window.location.pathname;
             if (path !== '/' && path !== '/index.html') return;
@@ -214,30 +233,34 @@ const FOOTER_LANG_CSS = `
             flex-shrink: 0;
             white-space: nowrap;
         }
+        .faq-icon,
+        .faq-item[open] .faq-icon {
+            color: #1A140F !important;
+        }
         .footer-lang-label {
-            color: rgba(255, 255, 255, 0.55);
+            color: #5C5146;
             font-size: 0.8125rem;
             line-height: 1;
             margin: 0;
         }
         .lang-select {
             appearance: none;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: #FFF9F0;
+            border: 1px solid rgba(26, 20, 15, 0.2);
             border-radius: 8px;
-            color: #fff;
+            color: #1A140F;
             font-size: 0.8125rem;
             line-height: 1.25;
             height: 32px;
             margin: 0;
             padding: 0 32px 0 10px;
             cursor: pointer;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%231A140F' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: right 10px center;
         }
         .lang-select:focus {
-            outline: 2px solid rgba(255, 255, 255, 0.25);
+            outline: 2px solid rgba(26, 20, 15, 0.25);
             outline-offset: 2px;
         }
         .footer-content {
@@ -336,7 +359,7 @@ function buildLocalePage(code) {
   );
   html = html.replace(
     /<meta name="keywords" content="[^"]*">/,
-    `<meta name="keywords" content="${keywords}">`,
+    `<meta name="keywords" content="${o.metaKeywords || keywords}">`,
   );
   html = html.replace(
     /<meta name="language" content="[^"]*">/,
@@ -358,9 +381,14 @@ function buildLocalePage(code) {
     /<meta name="twitter:title" content="[^"]*">/,
     `<meta name="twitter:title" content="${o.metaTitle}">`,
   );
+  html = applyOgLocales(html, code);
   html = html.replace(
-    /<meta property="og:locale" content="[^"]*">/,
-    `<meta property="og:locale" content="${o.ogLocale}">`,
+    /<meta property="og:image:alt" content="[^"]*">/,
+    `<meta property="og:image:alt" content="${o.ogImageAlt || 'Book Quote Scanner for iPhone and Android'}">`,
+  );
+  html = html.replace(
+    /<meta name="twitter:image:alt" content="[^"]*">/,
+    `<meta name="twitter:image:alt" content="${o.ogImageAlt || 'Book Quote Scanner for iPhone and Android'}">`,
   );
   html = html.replace(
     /https:\/\/book-quote-scanner\.app\/assets\//g,
@@ -377,18 +405,22 @@ function buildLocalePage(code) {
     html = html.replace(/<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?/g, '');
     html = html.replace('</head>', `${hreflangBlock()}\n</head>`);
   }
-  html = html.replace(/\s*<script>\s*\(function \(\) \{\s*var (supported|routes)[\s\S]*?<\/script>\s*/g, '\n');
+  html = html.replace(/\s*<script>\s*\(function \(\) \{(?:(?!<\/script>)[\s\S])*?var routes = [\s\S]*?<\/script>\s*/g, '\n');
 
-  const inLanguage = o.htmlLang === 'zh' ? 'zh-CN' : o.htmlLang === 'zh-tw' ? 'zh-TW' : `${o.htmlLang}`;
-  html = html.replace(/"inLanguage": "en-US"/, `"inLanguage": "${inLanguage}"`);
+  html = html.replace(/"inLanguage": "[^"]*"/g, `"inLanguage": "${LOCALE_CONFIG[code].hreflang}"`);
+  html = html.replace(/"url": "https:\/\/scanquotes\.app\/"/g, `"url": "${pageUrl}"`);
   html = html.replace(/"url": "https:\/\/book-quote-scanner\.app\/"/g, `"url": "${pageUrl}"`);
   html = html.replace(
-    /"name": "Book Quote Scanner"/,
-    `"name": "${escapeJson(appName)}"`,
+    /"name": "Book Quote Scanner",/g,
+    `"name": "${escapeJson(appName)}",`,
   );
   html = html.replace(
-    /"description": "Book quote scanner app for iPhone\. Snap a photo of any page, select quotes, and save them to your personal library with OCR, definitions, and AI vocabulary help\."/,
-    `"description": "${escapeJson(o.metaDescription)}"`,
+    /"name": "Book Quote Scanner \| Scan and Save Book Quotes"/,
+    `"name": "${escapeJson(o.metaTitle)}"`,
+  );
+  html = html.replaceAll(
+    'Scan a page on iPhone or Android and save book quotes in one library. Word definitions and AI help included. Free on the App Store and Google Play.',
+    escapeJson(o.metaDescription),
   );
 
   const featureListJson = features.map((f) => `"${escapeJson(f.title)}"`).join(',\n            ');
@@ -407,11 +439,23 @@ function buildLocalePage(code) {
   );
 
   html = html.replace(/<p class="app-slogan">[^<]*<\/p>/, `<p class="app-slogan">${o.heroSlogan}</p>`);
+  const altPairs = [
+    ['The quote library in the app, with saved lines, books, and page numbers', o.altLibrary],
+    ['Scan any printed page and pick the lines you want to keep', o.altScan],
+    ['A quote library with the line, the book, and the page', o.altSave],
+    ['A word definition with synonyms and example sentences', o.altDefinitions],
+    ['Quotes grouped by the book they came from', o.altBooks],
+    ['Ask about a word and get a plain explanation', o.altAi],
+    ['Share a quote as a card in paper, ink, mint, or sunset', o.altShare],
+  ];
+  for (const [english, local] of altPairs) {
+    if (local) html = html.replaceAll(english, local);
+  }
   html = html.replace(
     /<h1 class="app-title">[\s\S]*?<\/h1>/,
-    `<h1 class="app-title">${o.heroH1Before}${titleSep(code, o.heroH1Before, o.heroH1Highlight)}<span class="highlight-quote">${o.heroH1Highlight}</span>${titleSep(code, o.heroH1Highlight, o.heroH1After)}${o.heroH1After}</h1>`,
+    `<h1 class="app-title">${o.heroH1Lead ? `<span class="highlight-quote">${o.heroH1Lead}</span>` : ''}${titleSep(code, o.heroH1Lead || '', o.heroH1Before)}${o.heroH1Before}${titleSep(code, o.heroH1Before || o.heroH1Lead || '', o.heroH1Highlight)}<span class="highlight-quote">${o.heroH1Highlight}</span>${titleSep(code, o.heroH1Highlight, o.heroH1After)}${o.heroH1After}</h1>`,
   );
-  const taglineWithLink = `<a href="${storeUrl}" class="app-store-link" target="_blank" rel="noopener noreferrer">${appName}</a> ${o.heroTagline}`;
+  const taglineWithLink = `${appName} ${o.heroTagline}`;
   html = html.replace(/<p class="app-tagline">[\s\S]*?<\/p>/, `<p class="app-tagline">${taglineWithLink}</p>`);
 
   html = html.replace(
@@ -430,6 +474,7 @@ function buildLocalePage(code) {
     html = html.replace(match[0], replacement);
   });
 
+  html = html.replace(/<h3 class="sr-only">Book Quote Scanner features<\/h3>/, `<h3 class="sr-only">${o.featuresHeading || 'Book Quote Scanner features'}</h3>`);
   html = html.replace(/<h2 class="section-title">See It In Action<\/h2>/, `<h2 class="section-title">${o.sectionScreenshotsTitle}</h2>`);
   html = html.replace(
     /<p class="section-subtitle">Experience the intuitive interface designed for capturing and saving book quotes<\/p>/,
@@ -450,7 +495,7 @@ function buildLocalePage(code) {
     `<h2 class="section-title">${o.faqTitle}${titleSep(code, o.faqTitle, o.faqTitleAccent)}<span class="title-accent">${o.faqTitleAccent}</span></h2>`,
   );
   html = html.replace(
-    /<p class="section-subtitle">Common questions about our book quote scanner app for iPhone<\/p>/,
+    /<p class="section-subtitle">Common questions about the book quote scanner app for iPhone and Android<\/p>/,
     `<p class="section-subtitle">${o.faqSubtitle}</p>`,
   );
 
@@ -483,6 +528,9 @@ function buildLocalePage(code) {
     `<p class="cta-description">${linkedText(o.ctaDescription, appName, o.ctaDescriptionAfter, storeUrl)}</p>`,
   );
 
+  html = html.replace(/<span class="store-soft">Download on the<\/span>/g, `<span class="store-soft">${o.storeSoft || o.downloadAppStore}</span>`);
+  html = html.replace(/<span class="free">Free<\/span>/g, `<span class="free">${o.free}</span>`);
+  html = html.replace(/aria-label="Download on Google Play"/g, `aria-label="${o.storeSoft || o.downloadAppStore} Google Play"`);
   html = html.replace(/<span>Download on the App Store<\/span>/g, `<span>${o.downloadAppStore}</span>`);
   html = html.replace(/<span class="btn-free">Free<\/span>/g, `<span class="btn-free">${o.free}</span>`);
   html = html.replace(/aria-label="Download on the App Store"/g, `aria-label="${o.downloadAppStore}"`);
@@ -509,7 +557,7 @@ function buildLocalePage(code) {
 function updateEnglishIndex() {
   let html = fs.readFileSync(TEMPLATE_PATH, 'utf8');
   html = html.replace(/<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?/g, '');
-  html = html.replace(/\s*<script>\s*\(function \(\) \{\s*var (supported|routes)[\s\S]*?<\/script>\s*/g, '\n');
+  html = html.replace(/\s*<script>\s*\(function \(\) \{(?:(?!<\/script>)[\s\S])*?var routes = [\s\S]*?<\/script>\s*/g, '\n');
   html = html.replace('</head>', `${hreflangBlock()}\n${localeRedirectScript()}\n</head>`);
   html = html.replace(/<div class="footer-lang"[^>]*>[\s\S]*?<\/div>\s*/g, '');
   html = html.replace(
@@ -525,6 +573,7 @@ function updateEnglishIndex() {
   html = html.replace('</style>', `${FOOTER_LANG_CSS}    </style>`);
   html = html.replace(/\s*<script>\s*\(function \(\) \{\s*var select = document\.getElementById\('lang-select'\)[\s\S]*?<\/script>\s*/g, '\n');
   html = html.replace('</body>', `${langSwitcherScript()}\n</body>`);
+  html = applyOgLocales(html, 'en');
   fs.writeFileSync(TEMPLATE_PATH, normalizeDashes(html));
 }
 

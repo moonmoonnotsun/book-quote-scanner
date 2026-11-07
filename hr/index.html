@@ -3,6 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            var ua = navigator.userAgent || "";
+            var platform = navigator.platform || "";
+            var touch = navigator.maxTouchPoints || 0;
+            var coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+            var ipad = /iPad|iPhone|iPod/i.test(ua) || /iPad|iPhone|iPod/i.test(platform) || ((/Mac/i.test(platform) || /Macintosh/i.test(ua)) && (touch > 0 || coarse));
+            var os = /Android/i.test(ua) ? "android" : (ipad ? "ios" : "");
+            if (os) document.documentElement.classList.add("os-" + os);
+            if (os === "android") {
+                document.addEventListener("DOMContentLoaded", function () {
+                    var play = "https://play.google.com/store/apps/details?id=com.ohmyapp.clarify";
+                    var links = document.querySelectorAll('a[href*="apps.apple.com"]');
+                    for (var i = 0; i < links.length; i++) {
+                        if (links[i].classList.contains("store-ios")) continue;
+                        links[i].href = play;
+                    }
+                });
+            }
+        })();
+    </script>
     
     <!-- Primary Meta Tags -->
     <title>Skeniranje citata iz knjiga - Book Quote Scanner OCR App for iPho</title>
@@ -42,7 +63,7 @@
     
     <!-- App Store -->
     <meta name="apple-itunes-app" content="app-id=6744657207">
-    <meta name="theme-color" content="#23ab71">
+    <meta name="theme-color" content="#F6EFE4">
     
     <!-- Performance Hints -->
     <link rel="preconnect" href="https://apps.apple.com" crossorigin>
@@ -52,11 +73,11 @@
     <link rel="preload" href="../assets/css/app-page.css" as="style">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/book-quote-scanner/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/book-quote-scanner/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/book-quote-scanner/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/book-quote-scanner/optimized/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../assets/images/book-quote-scanner/optimized/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/book-quote-scanner/favicon-32x32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/book-quote-scanner/favicon-16x16.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/book-quote-scanner/apple-touch-icon.png?v=3">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/book-quote-scanner/favicon-192.png?v=3">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/images/book-quote-scanner/favicon-512.png?v=3">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -97,12 +118,17 @@
     <!-- Book Quote Scanner Color Overrides - Professional Blue Theme -->
     <style>
         :root {
-            --primary-color: #23ab71;
-            --primary-dark: #1a8a5a;
-            --primary-light: #02ff95;
-            --accent-color: #23ab71;
-            --gradient-primary: linear-gradient(135deg, #23ab71 0%, #02ff95 50%, #02ff95 100%);
-            --gradient-card: linear-gradient(135deg, rgba(35, 171, 113, 0.1) 0%, rgba(2, 255, 149, 0.1) 100%);
+            --primary-color: #F6C452;
+            --primary-dark: #D9A62A;
+            --primary-light: #F8D48A;
+            --accent-color: #F6C452;
+            --text-primary: #1A140F;
+            --text-secondary: #5C5146;
+            --bg-primary: #F6EFE4;
+            --bg-secondary: #F3E6D0;
+            --bg-card: #FFF9F0;
+            --gradient-primary: none;
+            --gradient-card: none;
         }
         
         body {
@@ -699,6 +725,388 @@
         
         
         
+        body {
+            background-color: #F6EFE4 !important;
+            background-image:
+                linear-gradient(rgba(26, 20, 15, 0.09) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(26, 20, 15, 0.09) 1px, transparent 1px) !important;
+            background-size: 64px 64px !important;
+            background-attachment: fixed !important;
+            color: #1A140F !important;
+        }
+        .app-hero,
+        .app-section,
+        .app-section-alt,
+        .cta-section,
+        .app-footer {
+            background: transparent !important;
+            background-image: none !important;
+            color: #1A140F !important;
+        }
+        .grid-background { display: none !important; }
+        .app-hero::before { display: none !important; }
+        .app-logo {
+            filter: none !important;
+            background: #EDD9C0 !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            border-radius: 28px !important;
+        }
+        .app-icon-large {
+            display: block !important;
+            margin: 0 0 16px !important;
+            line-height: 0 !important;
+        }
+        .app-icon-large .logo-frame {
+            display: inline-block !important;
+            position: relative !important;
+            width: 88px !important;
+            height: 88px !important;
+            line-height: 0 !important;
+            background: #EDD9C0 !important;
+            border-radius: 22px !important;
+            overflow: hidden !important;
+            box-shadow: none !important;
+        }
+        .app-icon-large .app-logo,
+        .app-icon-large:hover .app-logo,
+        .app-icon-large:active .app-logo {
+            position: absolute !important;
+            left: 50% !important;
+            top: 50% !important;
+            width: 120px !important;
+            height: 120px !important;
+            max-width: none !important;
+            border-radius: 22px !important;
+            transform: translate(-50%, -50%) !important;
+            filter: none !important;
+            background: #EDD9C0 !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            display: block !important;
+        }
+        .footer-app-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 9px;
+            display: block;
+        }
+        .app-slogan {
+            background: none !important;
+            -webkit-text-fill-color: #5C5146 !important;
+            color: #5C5146 !important;
+            font-size: 0.95rem !important;
+            letter-spacing: 0.08em !important;
+            text-transform: uppercase !important;
+        }
+        .app-title,
+        .section-title,
+        .title-line,
+        .feature-title,
+        .cta-title,
+        .faq-question-text,
+        .logo-text {
+            background: none !important;
+            -webkit-background-clip: border-box !important;
+            background-clip: border-box !important;
+            -webkit-text-fill-color: #1A140F !important;
+            color: #1A140F !important;
+        }
+        .app-title,
+        .section-title,
+        .cta-title,
+        .feature-title,
+        .app-tagline,
+        .highlight-quote,
+        .title-accent {
+            text-shadow: none !important;
+            filter: none !important;
+        }
+        .app-title {
+            font-size: clamp(3.1rem, 6vw, 5.3rem) !important;
+            font-weight: 800 !important;
+            line-height: 0.98 !important;
+            letter-spacing: -0.045em !important;
+        }
+        .highlight-quote,
+        .title-accent {
+            display: inline !important;
+            background-color: transparent !important;
+            background-image: linear-gradient(#F6C452, #F6C452) !important;
+            background-repeat: no-repeat !important;
+            background-size: 100% 0.72em !important;
+            background-position: 0 0.32em !important;
+            -webkit-background-clip: border-box !important;
+            background-clip: border-box !important;
+            color: #1A140F !important;
+            -webkit-text-fill-color: #1A140F !important;
+            padding: 0 0.08em !important;
+            border-radius: 0.12em !important;
+            box-shadow: none !important;
+            box-decoration-break: clone !important;
+            -webkit-box-decoration-break: clone !important;
+        }
+        .highlight-quote::after,
+        .title-accent::after {
+            content: none !important;
+            display: none !important;
+            background: none !important;
+            filter: none !important;
+        }
+        .feature-card:hover,
+        .feature-icon-container {
+            box-shadow: none !important;
+            filter: none !important;
+        }
+        .app-tagline,
+        .section-subtitle,
+        .feature-description,
+        .faq-answer,
+        .cta-description,
+        .footer-link,
+        .footer-copyright {
+            color: #5C5146 !important;
+            -webkit-text-fill-color: #5C5146 !important;
+        }
+        .app-store-link,
+        .app-store-link:hover,
+        .faq-answer .app-store-link,
+        .cta-description .app-store-link,
+        .cta-description .app-store-link:hover {
+            color: #1A140F !important;
+            border-bottom-color: rgba(26, 20, 15, 0.35) !important;
+        }
+        .feature-card,
+        .faq-item,
+        .cta-card,
+        .screenshot-item {
+            background: #FFF9F0 !important;
+            border: 1px solid rgba(26, 20, 15, 0.06) !important;
+            box-shadow: 0 16px 40px rgba(90, 60, 20, 0.06) !important;
+            color: #1A140F !important;
+        }
+        .feature-icon-container {
+            background: #F6C452 !important;
+            color: #1A140F !important;
+        }
+        .feature-icon { stroke: #1A140F !important; }
+        .quote-stage {
+            position: relative;
+            width: min(340px, 100%);
+            margin: 0 auto;
+        }
+        .quote-stage .iphone {
+            position: relative;
+            width: 100%;
+            padding: 12px;
+            border-radius: 46px;
+            background: linear-gradient(165deg, #5c616c 0%, #1c1e24 18%, #0c0d11 52%, #3a3e46 100%);
+            box-shadow:
+                0 28px 50px rgba(90, 50, 10, 0.18),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.28);
+        }
+        .quote-stage .iphone-screen {
+            border-radius: 34px;
+            overflow: hidden;
+            background: #E8DFD2;
+            line-height: 0;
+            box-shadow: inset 0 0 0 2px #05060a;
+        }
+        .quote-stage .hero-shot {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+        .quote-stage .iphone-btn {
+            position: absolute;
+            width: 3px;
+            border-radius: 2px;
+            background: linear-gradient(180deg, #6a6e78, #2a2d34);
+        }
+        .quote-stage .iphone-silent { left: -3px; top: 16%; height: 22px; }
+        .quote-stage .iphone-vol-up { left: -3px; top: 22%; height: 46px; }
+        .quote-stage .iphone-vol-down { left: -3px; top: 30%; height: 46px; }
+        .quote-stage .iphone-power { right: -3px; top: 24%; height: 70px; }
+        .save-board {
+            position: relative;
+            height: 100%;
+            background: transparent;
+            border-radius: 0;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 28px 18px 0;
+        }
+        .save-board-title {
+            margin: 0 0 18px;
+            color: #1A140F;
+            font-weight: 800;
+            font-size: clamp(2.4rem, 4vw, 3.4rem);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            text-align: center;
+        }
+        .lib-phone {
+            width: min(250px, 72%);
+            padding: 10px;
+            border-radius: 36px;
+            background: #1A140F;
+            box-shadow: 0 24px 40px rgba(90, 50, 10, 0.16);
+        }
+        .lib-phone img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 26px;
+        }
+        .lib-float {
+            position: absolute;
+            left: 18px;
+            top: 46%;
+            width: min(230px, 62%);
+            background: #FFF9F0;
+            border-radius: 16px;
+            padding: 14px 14px 12px;
+            box-shadow: 0 16px 32px rgba(90, 50, 10, 0.16);
+            animation: lib-float 4.5s ease-in-out infinite;
+        }
+        .lib-float p {
+            margin: 0 0 10px;
+            color: #1A140F;
+            font-size: 0.95rem;
+            line-height: 1.35;
+            font-weight: 600;
+        }
+        .lib-float span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #5C5146;
+            font-size: 0.75rem;
+        }
+        .lib-float i {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #F6C452;
+            flex: none;
+        }
+        @keyframes lib-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .lib-float { animation: none; }
+        }
+        .quote-card {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0;
+            filter: drop-shadow(0 28px 40px rgba(90, 50, 10, 0.16));
+            animation: quote-show 24s infinite;
+        }
+        .quote-card:first-child { opacity: 1; }
+        .quote-card:nth-child(1) { animation-delay: 0s; }
+        .quote-card:nth-child(2) { animation-delay: 4s; }
+        .quote-card:nth-child(3) { animation-delay: 8s; }
+        .quote-card:nth-child(4) { animation-delay: 12s; }
+        .quote-card:nth-child(5) { animation-delay: 16s; }
+        .quote-card:nth-child(6) { animation-delay: 20s; }
+        @keyframes quote-show {
+            0% { opacity: 0; transform: translateY(18px) scale(0.98); }
+            4% { opacity: 1; transform: none; }
+            14% { opacity: 1; transform: none; }
+            18% { opacity: 0; transform: translateY(-12px) scale(1.01); }
+            100% { opacity: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .quote-card { animation: none; opacity: 0; }
+            .quote-card:first-child { opacity: 1; }
+        }
+        html.os-ios .store-android,
+        html.os-android .store-ios { display: none !important; }
+        .app-hero-content,
+        .app-hero-visual { min-width: 0; }
+        .app-hero-content { max-width: none !important; }
+        .app-badges,
+        .cta-buttons {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            align-items: center;
+            gap: 14px;
+        }
+        .app-badges .store,
+        .cta-buttons .store {
+            display: inline-flex !important;
+            align-items: center;
+            gap: 14px;
+            width: auto !important;
+            flex: none;
+            margin: 0;
+            padding: 16px 18px !important;
+            border: 0;
+            border-radius: 16px !important;
+            background: #F6C452;
+            color: #1A140F !important;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.05;
+            text-transform: none !important;
+            text-decoration: none;
+            white-space: nowrap;
+            box-shadow: none !important;
+        }
+        .store-play .store-soft,
+        .store-play .store-strong,
+        .store-play .free { color: #1A140F !important; }
+        .store-play { background: #3ECF8E !important; color: #1A140F !important; }
+        html.os-android .store-play { background: #F6C452 !important; color: #1A140F !important; }
+        html.os-android .store-play .store-soft,
+        html.os-android .store-play .store-strong,
+        html.os-android .store-play .free { color: #1A140F !important; }
+        .store:hover { filter: brightness(1.05); }
+        .store .apple,
+        .store .play-mark { width: 24px; height: 24px; flex: none; display: block; }
+        .store-label { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.05; }
+        .store-soft { font-weight: 500; font-size: 0.72em; color: inherit !important; }
+        .store-strong { font-weight: 800; font-size: 1em; color: inherit !important; }
+        .store .free {
+            padding-left: 12px;
+            border-left: 1px solid rgba(26, 20, 15, 0.2);
+            font-weight: 700;
+            color: inherit !important;
+        }
+        .store-play .free { border-left-color: rgba(26, 20, 15, 0.2); }
+        html.os-android .store-play .free { border-left-color: rgba(26, 20, 15, 0.2); }
+        @media (max-width: 1100px) {
+            .app-badges, .cta-buttons { flex-wrap: wrap !important; }
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         .footer-lang {
             display: flex;
             align-items: center;
@@ -709,30 +1117,34 @@
             flex-shrink: 0;
             white-space: nowrap;
         }
+        .faq-icon,
+        .faq-item[open] .faq-icon {
+            color: #1A140F !important;
+        }
         .footer-lang-label {
-            color: rgba(255, 255, 255, 0.55);
+            color: #5C5146;
             font-size: 0.8125rem;
             line-height: 1;
             margin: 0;
         }
         .lang-select {
             appearance: none;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: #FFF9F0;
+            border: 1px solid rgba(26, 20, 15, 0.2);
             border-radius: 8px;
-            color: #fff;
+            color: #1A140F;
             font-size: 0.8125rem;
             line-height: 1.25;
             height: 32px;
             margin: 0;
             padding: 0 32px 0 10px;
             cursor: pointer;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%231A140F' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: right 10px center;
         }
         .lang-select:focus {
-            outline: 2px solid rgba(255, 255, 255, 0.25);
+            outline: 2px solid rgba(26, 20, 15, 0.25);
             outline-offset: 2px;
         }
         .footer-content {
@@ -769,7 +1181,7 @@
         "alternateName": ["Book Quote Scanner App", "Quote Scanner", "Book Quotes App"],
         "url": "https://scanquotes.app/",
         "applicationCategory": "BookApplication",
-        "operatingSystem": "iOS",
+        "operatingSystem": "iOS, Android",
         "inLanguage": "hr",
         "datePublished": "2024-01-01",
         "dateModified": "2026-07-06",
@@ -928,27 +1340,37 @@
         <div class="app-hero-container">
             <div class="app-hero-content">
                 <div class="app-icon-large">
-                    <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" aria-label="Preuzmi u App Storeu" style="display: block; text-decoration: none;">
-                        <img src="../assets/images/book-quote-scanner/optimized/logo.png" alt="Book Quote Scanner Logo" class="app-logo" width="120" height="120" loading="eager" decoding="async">
-                    </a>
+                    <span class="logo-frame">
+                        <img src="../assets/images/book-quote-scanner/optimized/app-icon.png" alt="Book Quote Scanner" class="app-logo" width="120" height="120" loading="eager" decoding="async">
+                    </span>
                 </div>
-                <p class="app-slogan">Skeniranje citata iz knjiga za iPhone</p>
-                <h1 class="app-title">Skenirajte, spremite i čitajte svoje omiljene <span class="highlight-quote">citati iz knjiga</span></h1>
-                <p class="app-tagline"><a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Skeniranje citata iz knjiga</a> omogućuje skeniranje bilo koje stranice i spremanje citata iz knjiga. Snimite fotografiju, odaberite svoje favorite i čuvajte ih u jednoj biblioteci.</p>
+                <p class="app-slogan">Skener citata iz knjiga za iPhone i Android</p>
+                <h1 class="app-title"><span class="highlight-quote">Skenirajte i spremite</span> omiljene <span class="highlight-quote">citati iz knjiga</span></h1>
+                <p class="app-tagline">Skeniranje citata iz knjiga omogućuje skeniranje bilo koje stranice i spremanje citata iz knjiga. Snimite fotografiju, odaberite svoje favorite i čuvajte ih u jednoj biblioteci.</p>
                 <div class="app-badges">
-                    <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Preuzmi u App Storeu">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
-                            <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path>
-                        </svg>
-                        <span>Preuzmi u App Storeu</span>
-                        <span class="btn-divider"></span>
-                        <span class="btn-free">Besplatno</span>
+                    <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="store store-lg store-ios" aria-label="Preuzmi u App Storeu">
+                        <svg class="apple" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
+                        <span class="store-label"><span class="store-soft">Preuzmi u</span><span class="store-strong">App Store</span></span>
+                        <span class="free">Besplatno</span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ohmyapp.clarify" target="_blank" rel="noopener noreferrer" class="store store-lg store-play store-android" aria-label="Preuzmi u Google Play">
+                        <svg class="play-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M6.2 3.4c-.7.4-1.2 1.2-1.2 2.1v13c0 .9.5 1.7 1.2 2.1.7.4 1.6.4 2.3 0l11.2-6.5c.8-.4 1.3-1.2 1.3-2.1s-.5-1.7-1.3-2.1L8.5 3.4c-.7-.4-1.6-.4-2.3 0z"/></svg>
+                        <span class="store-label"><span class="store-soft">Preuzmi u</span><span class="store-strong">Google Play</span></span>
+                        <span class="free">Besplatno</span>
                     </a>
                 </div>
             </div>
             <div class="app-hero-visual">
-                <div class="phone-mockup">
-                    <img src="../assets/images/book-quote-scanner/optimized/hero.png" alt="Book Quote Scanner iOS app running on iPhone showing quote capture interface" class="phone-screenshot" width="400" height="800" loading="eager" decoding="async">
+                <div class="quote-stage">
+                    <div class="iphone">
+                        <span class="iphone-btn iphone-silent"></span>
+                        <span class="iphone-btn iphone-vol-up"></span>
+                        <span class="iphone-btn iphone-vol-down"></span>
+                        <span class="iphone-btn iphone-power"></span>
+                        <div class="iphone-screen">
+                            <img class="hero-shot" src="../assets/images/book-quote-scanner/listing/library.jpg" alt="The quote library in the app, with saved lines, books, and page numbers" width="470" height="1024">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1041,27 +1463,27 @@
         <div class="screenshots-carousel" aria-label="App screenshots">
             <div class="screenshots-grid">
                 <div class="screenshot-item">
-                    <img src="../assets/images/book-quote-scanner/optimized/screen1.jpg" alt="Book Quote Scanner iOS app - scan any text from book pages" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="../assets/images/book-quote-scanner/listing/scan.jpg" alt="Scan any printed page and pick the lines you want to keep" loading="lazy" width="470" height="1024" decoding="async">
                     <p style="display: none;">Scan Any Text</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="../assets/images/book-quote-scanner/optimized/screen2.jpg" alt="Book Quote Scanner iOS app - save favourite book quotes" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="../assets/images/book-quote-scanner/listing/save-quotes.jpg" alt="A quote library with the line, the book, and the page" loading="lazy" width="470" height="1024" decoding="async">
                     <p style="display: none;">Save Quotes</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="../assets/images/book-quote-scanner/optimized/screen3.jpg" alt="Book Quote Scanner iOS app - get instant word definitions" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="../assets/images/book-quote-scanner/listing/definitions.jpg" alt="A word definition with synonyms and example sentences" loading="lazy" width="470" height="1024" decoding="async">
                     <p style="display: none;">Word Definitions</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="../assets/images/book-quote-scanner/optimized/screen4.jpg" alt="Book Quote Scanner iOS app - organize quotes in groups" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="../assets/images/book-quote-scanner/listing/books.jpg" alt="Quotes grouped by the book they came from" loading="lazy" width="470" height="1024" decoding="async">
                     <p style="display: none;">Organize in Groups</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="../assets/images/book-quote-scanner/optimized/screen5.jpg" alt="Book Quote Scanner iOS app - ask AI about words" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="../assets/images/book-quote-scanner/listing/ask-ai.jpg" alt="Ask about a word and get a plain explanation" loading="lazy" width="470" height="1024" decoding="async">
                     <p style="display: none;">Ask AI</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="../assets/images/book-quote-scanner/optimized/screen6.jpg" alt="Book Quote Scanner iOS app - share styled quotes with friends" loading="lazy" width="280" height="600" decoding="async" onerror="this.parentElement.classList.add('screenshot-placeholder'); this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <img src="../assets/images/book-quote-scanner/listing/share.jpg" alt="Share a quote as a card in paper, ink, mint, or sunset" loading="lazy" width="470" height="1024" decoding="async">
                     <p style="display: none;">Share with Friends</p>
                 </div>
             </div>
@@ -1072,7 +1494,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Što je a <span class="title-accent">aplikacija za skeniranje citata iz knjiga</span>?</h2>
-                <p class="section-subtitle about-copy">Aplikacija za skeniranje citata iz knjiga bilježi tekst s ispisanih stranica kako biste mogli spremiti citate na jednom mjestu. <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Skeniranje citata iz knjiga</a> za iPhone - OCR skeniranje, biblioteka citata, definicije riječi i AI vokabular pomoć.</p>
+                <p class="section-subtitle about-copy">Aplikacija za skeniranje citata iz knjiga bilježi tekst s ispisanih stranica kako biste mogli spremiti citate na jednom mjestu. Skeniranje citata iz knjiga za iPhone - OCR skeniranje, biblioteka citata, definicije riječi i AI vokabular pomoć.</p>
             </div>
         </div>
     </section>
@@ -1090,7 +1512,7 @@
                         <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </summary>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer">Aplikacija za skeniranje citata iz knjiga bilježi tekst s ispisanih stranica i sprema vaše citate. <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Skeniranje citata iz knjiga</a> koristi vašu iPhone kameru i OCR za izgradnju vaše osobne biblioteke citata.</p>
+                        <p class="faq-answer">Aplikacija za skeniranje citata iz knjiga bilježi tekst s ispisanih stranica i sprema vaše citate. Skeniranje citata iz knjiga koristi vašu iPhone kameru i OCR za izgradnju vaše osobne biblioteke citata.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -1145,15 +1567,17 @@
     <section class="cta-section">
         <div class="cta-card">
             <h2 class="cta-title">Preuzmite aplikaciju za skeniranje citata knjiga</h2>
-            <p class="cta-description">Preuzmite <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" class="app-store-link" target="_blank" rel="noopener noreferrer">Skeniranje citata iz knjiga</a> na iPhoneu - skenirajte stranice, spremite omiljene citate i čitajte ih bilo kada.</p>
+            <p class="cta-description">Preuzmite Skeniranje citata iz knjiga na iPhoneu - skenirajte stranice, spremite omiljene citate i čitajte ih bilo kada.</p>
             <div class="cta-buttons">
-                <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="btn btn-app-store" aria-label="Preuzmi u App Storeu">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 12px; vertical-align: middle;">
-                        <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path>
-                    </svg>
-                    <span>Preuzmi u App Storeu</span>
-                    <span class="btn-divider"></span>
-                    <span class="btn-free">Besplatno</span>
+                <a href="https://apps.apple.com/hr/app/book-quote-scanner/id6744657207" target="_blank" rel="noopener noreferrer" class="store store-lg store-ios" aria-label="Preuzmi u App Storeu">
+                    <svg class="apple" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg>
+                    <span class="store-label"><span class="store-soft">Preuzmi u</span><span class="store-strong">App Store</span></span>
+                    <span class="free">Besplatno</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ohmyapp.clarify" target="_blank" rel="noopener noreferrer" class="store store-lg store-play store-android" aria-label="Preuzmi u Google Play">
+                    <svg class="play-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M6.2 3.4c-.7.4-1.2 1.2-1.2 2.1v13c0 .9.5 1.7 1.2 2.1.7.4 1.6.4 2.3 0l11.2-6.5c.8-.4 1.3-1.2 1.3-2.1s-.5-1.7-1.3-2.1L8.5 3.4c-.7-.4-1.6-.4-2.3 0z"/></svg>
+                    <span class="store-label"><span class="store-soft">Preuzmi u</span><span class="store-strong">Google Play</span></span>
+                    <span class="free">Besplatno</span>
                 </a>
             </div>
         </div>
@@ -1163,10 +1587,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <div class="logo-circle">Q</div>
+                    <img class="footer-app-icon" src="../assets/images/book-quote-scanner/optimized/app-icon.png" alt="" width="36" height="36">
                     <span class="logo-text">Skeniranje citata iz knjiga</span>
                 </div>
-                                                                                                                                                <div class="footer-lang">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Jezik</label>
                     <select id="lang-select" class="lang-select" aria-label="Jezik">
                         <option value="/">EN</option>
