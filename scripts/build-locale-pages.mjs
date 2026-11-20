@@ -162,36 +162,12 @@ function hreflangBlock() {
 }
 
 function localeRedirectScript() {
-  const routeEntries = ALL_LOCALES.filter(({ path: p }) => p !== '/').flatMap(({ path: p }) => {
-    const dir = p.replace(/\//g, '');
-    const entries = [[dir, p]];
-    if (dir === 'pt') entries.push(['pt-br', p]);
-    if (dir === 'zh') entries.push(['zh-cn', p], ['zh-hans', p]);
-    if (dir === 'zh-tw') entries.push(['zh-hant', p], ['zh-hk', p], ['zh-tw', p]);
-    if (dir === 'pt-pt') entries.push(['pt-pt', p]);
-    if (dir === 'uk') entries.push(['ua', p]);
-    if (dir === 'nb') entries.push(['no', p], ['nn', p]);
-    if (dir === 'es-mx') entries.push(['es-mx', p]);
-    if (dir === 'fr-ca') entries.push(['fr-ca', p]);
-    return entries;
-  });
-  const routesJson = JSON.stringify(Object.fromEntries(routeEntries));
   return `    <script>
         (function () {
-            var ua = navigator.userAgent || "";
-            if (/bot|crawl|spider|slurp|preview|facebookexternalhit|embedly|pinterest|whatsapp|telegram/i.test(ua)) return;
-            var routes = ${routesJson};
             var path = window.location.pathname;
-            if (path !== '/' && path !== '/index.html') return;
-
-            var langs = navigator.languages || [navigator.language || 'en'];
-            var primary = (langs[0] || 'en').toLowerCase();
-            if (primary === 'en' || primary.indexOf('en-') === 0) return;
-
-            var tag = primary;
-            var base = primary.split('-')[0];
-            if (routes[tag]) { window.location.replace(routes[tag]); return; }
-            if (routes[base]) { window.location.replace(routes[base]); return; }
+            if (!/\\/index\\.html$/.test(path)) return;
+            var next = path.replace(/index\\.html$/, '');
+            window.location.replace(next + window.location.search + window.location.hash);
         })();
     </script>`;
 }
@@ -336,22 +312,24 @@ function buildLocalePage(code) {
     ? `lang="${o.htmlLang}" dir="${o.htmlDir}"`
     : `lang="${o.htmlLang}"`;
   html = html.replace(/<html lang="en">/, `<html ${htmlAttrs}>`);
+  const descAttr = o.metaDescription.replace(/"/g, "&quot;");
+  const titleAttr = o.metaTitle.replace(/"/g, "&quot;");
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${o.metaTitle}</title>`);
   html = html.replace(
     /<meta name="title" content="[^"]*">/,
-    `<meta name="title" content="${o.metaTitle}">`,
+    `<meta name="title" content="${titleAttr}">`,
   );
   html = html.replace(
     /<meta name="description" content="[^"]*">/,
-    `<meta name="description" content="${o.metaDescription}">`,
+    `<meta name="description" content="${descAttr}">`,
   );
   html = html.replace(
     /<meta property="og:description" content="[^"]*">/,
-    `<meta property="og:description" content="${o.metaDescription}">`,
+    `<meta property="og:description" content="${descAttr}">`,
   );
   html = html.replace(
     /<meta name="twitter:description" content="[^"]*">/,
-    `<meta name="twitter:description" content="${o.metaDescription}">`,
+    `<meta name="twitter:description" content="${descAttr}">`,
   );
   html = html.replace(
     /<meta name="twitter:url" content="[^"]*">/,
@@ -375,11 +353,11 @@ function buildLocalePage(code) {
   );
   html = html.replace(
     /<meta property="og:title" content="[^"]*">/,
-    `<meta property="og:title" content="${o.metaTitle}">`,
+    `<meta property="og:title" content="${titleAttr}">`,
   );
   html = html.replace(
     /<meta name="twitter:title" content="[^"]*">/,
-    `<meta name="twitter:title" content="${o.metaTitle}">`,
+    `<meta name="twitter:title" content="${titleAttr}">`,
   );
   html = applyOgLocales(html, code);
   html = html.replace(
@@ -558,6 +536,7 @@ function updateEnglishIndex() {
   let html = fs.readFileSync(TEMPLATE_PATH, 'utf8');
   html = html.replace(/<link rel="alternate" hreflang="[^"]*" href="[^"]*">\n?/g, '');
   html = html.replace(/\s*<script>\s*\(function \(\) \{(?:(?!<\/script>)[\s\S])*?var routes = [\s\S]*?<\/script>\s*/g, '\n');
+  html = html.replace(/\s*<script>\s*\(function \(\) \{\s*var path = window\.location\.pathname;[\s\S]*?<\/script>\s*/g, '\n');
   html = html.replace('</head>', `${hreflangBlock()}\n${localeRedirectScript()}\n</head>`);
   html = html.replace(/<div class="footer-lang"[^>]*>[\s\S]*?<\/div>\s*/g, '');
   html = html.replace(

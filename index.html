@@ -52,6 +52,41 @@
     <meta property="og:image:secure_url" content="https://scanquotes.app/assets/images/book-quote-scanner/optimized/og.png">
     <meta property="og:site_name" content="Book Quote Scanner">
     <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="pl_PL">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="nl_NL">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="uk_UA">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:locale:alternate" content="sv_SE">
+    <meta property="og:locale:alternate" content="zh_TW">
+    <meta property="og:locale:alternate" content="pt_PT">
+    <meta property="og:locale:alternate" content="vi_VN">
+    <meta property="og:locale:alternate" content="id_ID">
+    <meta property="og:locale:alternate" content="th_TH">
+    <meta property="og:locale:alternate" content="cs_CZ">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="og:locale:alternate" content="nb_NO">
+    <meta property="og:locale:alternate" content="fi_FI">
+    <meta property="og:locale:alternate" content="he_IL">
+    <meta property="og:locale:alternate" content="ca_ES">
+    <meta property="og:locale:alternate" content="hr_HR">
+    <meta property="og:locale:alternate" content="el_GR">
+    <meta property="og:locale:alternate" content="hi_IN">
+    <meta property="og:locale:alternate" content="hu_HU">
+    <meta property="og:locale:alternate" content="ms_MY">
+    <meta property="og:locale:alternate" content="es_MX">
+    <meta property="og:locale:alternate" content="ro_RO">
+    <meta property="og:locale:alternate" content="sk_SK">
+    <meta property="og:locale:alternate" content="fr_CA">
     <meta property="og:updated_time" content="2026-07-06T00:00:00+00:00">
     
     <!-- Twitter -->
@@ -1109,6 +1144,10 @@
         
         
         
+        
+        
+        
+        
         .footer-lang {
             display: flex;
             align-items: center;
@@ -1361,18 +1400,10 @@
     <link rel="alternate" hreflang="x-default" href="https://scanquotes.app/">
     <script>
         (function () {
-            var routes = {"de":"/de/","fr":"/fr/","es":"/es/","ru":"/ru/","pl":"/pl/","ja":"/ja/","pt":"/pt/","pt-br":"/pt/","zh":"/zh/","zh-cn":"/zh/","zh-hans":"/zh/","ko":"/ko/","it":"/it/","nl":"/nl/","tr":"/tr/","uk":"/uk/","ua":"/uk/","ar":"/ar/","sv":"/sv/","zh-tw":"/zh-tw/","zh-hant":"/zh-tw/","zh-hk":"/zh-tw/","pt-pt":"/pt-pt/","vi":"/vi/","id":"/id/","th":"/th/","cs":"/cs/","da":"/da/","nb":"/nb/","no":"/nb/","nn":"/nb/","fi":"/fi/","he":"/he/","ca":"/ca/","hr":"/hr/","el":"/el/","hi":"/hi/","hu":"/hu/","ms":"/ms/","es-mx":"/es-mx/","ro":"/ro/","sk":"/sk/","fr-ca":"/fr-ca/"};
             var path = window.location.pathname;
-            if (path !== '/' && path !== '/index.html') return;
-
-            var langs = navigator.languages || [navigator.language || 'en'];
-            var primary = (langs[0] || 'en').toLowerCase();
-            if (primary === 'en' || primary.indexOf('en-') === 0) return;
-
-            var tag = primary;
-            var base = primary.split('-')[0];
-            if (routes[tag]) { window.location.replace(routes[tag]); return; }
-            if (routes[base]) { window.location.replace(routes[base]); return; }
+            if (!/\/index\.html$/.test(path)) return;
+            var next = path.replace(/index\.html$/, '');
+            window.location.replace(next + window.location.search + window.location.hash);
         })();
     </script>
 </head>
@@ -1633,7 +1664,7 @@
                     <img class="footer-app-icon" src="assets/images/book-quote-scanner/optimized/app-icon.png" alt="" width="36" height="36">
                     <span class="logo-text">Book Quote Scanner</span>
                 </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-lang">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="footer-lang">
                     <label for="lang-select" class="footer-lang-label">Language</label>
                     <select id="lang-select" class="lang-select" aria-label="Language">
                         <option value="/" selected>EN</option>

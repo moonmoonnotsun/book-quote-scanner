@@ -236,7 +236,8 @@ function getMetadataName(metadata, locale) {
   return "Book Quote Scanner";
 }
 
-function buildEnglishTemplates(appName) {
+function buildEnglishTemplates() {
+  const appName = "{APP}";
   return {
     metaTitle: `${appName} - Book Quote Scanner OCR App for iPhone`,
     metaDescription:
@@ -329,22 +330,7 @@ function lowerFirstIfLatin(text) {
   return text;
 }
 
-function truncateAtWord(text, max) {
-  if (text.length <= max) return text;
-  const cut = text.slice(0, max);
-  const lastSpace = cut.lastIndexOf(" ");
-  return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).trim();
-}
-
-function normalizeLengths(item, appName) {
-  if (item.metaTitle.length < 50) {
-    item.metaTitle = `${item.metaTitle} iPhone`;
-  }
-  item.metaTitle = truncateAtWord(item.metaTitle, 65);
-  if (item.metaDescription.length < 140) {
-    item.metaDescription = `${item.metaDescription} ${appName}.`;
-  }
-  item.metaDescription = truncateAtWord(item.metaDescription, 160);
+function normalizeLengths(item) {
   return item;
 }
 
@@ -360,13 +346,13 @@ async function main() {
 
   for (const locale of LOCALES) {
     const appName = getMetadataName(metadata, locale);
-    const englishTemplates = buildEnglishTemplates(appName);
+    const englishTemplates = buildEnglishTemplates();
     const englishValues = SOURCE_FIELDS.map((field) => englishTemplates[field]);
     const translatedValues = await translateBatch(englishValues, locale);
 
     const translated = {};
     for (let i = 0; i < SOURCE_FIELDS.length; i += 1) {
-      translated[SOURCE_FIELDS[i]] = translatedValues[i];
+      translated[SOURCE_FIELDS[i]] = translatedValues[i].split("{APP}").join(appName);
     }
 
     translated.heroTagline = lowerFirstIfLatin(translated.heroTagline);
@@ -438,7 +424,7 @@ async function main() {
       item.htmlDir = "rtl";
     }
 
-    output[locale] = normalizeLengths(item, appName);
+    output[locale] = normalizeLengths(item);
   }
 
   await fs.mkdir(path.dirname(OUTPUT_PATH), { recursive: true });
